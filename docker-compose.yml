@@ -1,0 +1,50 @@
+version: '3.5'
+
+services:
+    api:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        image: prevention
+        ports:
+            - '8081:80'
+        container_name: prevention-app
+        restart: unless-stopped
+        working_dir: /var/www/html
+        volumes:
+            - ./:/var/www/html
+        networks:
+            - med
+        depends_on:
+            - db
+
+    db:
+        platform: linux/x86_64
+        image: postgres:latest
+        restart: always
+        environment:
+            - MYSQL_ROOT_PASSWORD=rootdocker ps
+            - MYSQL_DATABASE=dashcam
+            - MYSQL_USER=thomas
+            - MYSQL_PASSWORD=My7Pass@Word_9_8A_zE
+        ports:
+            - '3306:3306'
+        expose:
+            - '3306'
+        networks:
+            - med
+        volumes:
+            - db_data:/var/lib/postgres
+    
+    adminer:
+        image: adminer
+        restart: always
+        ports:
+            - '8087:8080'
+
+networks:
+    med:
+        driver: bridge
+
+volumes:
+    db_data:
