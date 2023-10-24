@@ -1,0 +1,14 @@
+default:
+  gherkin:
+    filters:
+      tags: ~@php8
+  suites:
+    default:
+      contexts:
+        - AddLearnerToTrainingContext: ~
+  extensions:
+    Behat\MinkExtension:
+      base_url: 'http://127.0.0.1:8000/'
+      sessions:
+        default:
+          goutte: ~

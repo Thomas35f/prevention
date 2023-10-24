@@ -1,0 +1,117 @@
+openapi: 3.0.0
+info:
+  title: 'OpenAPI prevention project backend documentation'
+  description: 'backend is used by smartphone application and desktop front'
+  contact:
+    email: admin@lery.cc
+  license:
+    name: 'Apache 2.0'
+    url: 'https://www.apache.org/licenses/LICENSE-2.0.html'
+  version: 1.0.0
+paths:
+  /api/learners:
+    post:
+      tags:
+        - Learners
+      summary: 'Ajoute un nouveau stagiaire'
+      operationId: f919fab6ff387be7b3819dcff6bc8339
+      requestBody:
+        description: 'Données pour ajouter un nouveau stagiaire'
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/StoreLearner'
+      responses:
+        '201':
+          description: 'Stagiaire ajouté avec succès'
+          content:
+            application/json:
+              schema:
+                properties:
+                  message: { type: string }
+                  learner: { $ref: '#/components/schemas/Learner' }
+                type: object
+        '422':
+          description: 'Erreur de validation'
+          content:
+            application/json:
+              schema:
+                properties:
+                  message: { type: string }
+                  errors: { type: object }
+                type: object
+components:
+  schemas:
+    StoreLearner:
+      required:
+        - mail
+        - subclient_id
+      properties:
+        '':
+          $ref: '#/components/schemas/Learner'
+      type: object
+    Learner:
+      required:
+        - mail
+        - subclient_id
+      type: object
+      allOf:
+        -
+          $ref: '#/components/schemas/User'
+        -
+          properties:
+            lastname:
+              description: "trainer's lastname"
+            subclient_id:
+              description: "Learner's enterprise"
+              type: integer
+              readOnly: true
+    User:
+      required:
+        - mail
+      properties:
+        lastname:
+          description: "User's lastname"
+          type: string
+          example: Doe
+        firstname:
+          description: "User's firstname"
+          type: string
+          example: John
+        mail:
+          description: "User's email. Could be enterprise generic email address. Must be unique"
+          type: string
+          example: john.doe@example.com
+        phone:
+          description: "User's phone. Could be entreprise standard phone number"
+          type: string
+          maxLength: 10
+          example: '0123456789'
+        address:
+          description: "User's phone. Could be entreprise standard phone number"
+          type: string
+          maxLength: 100
+          example: '0123456789'
+        zip_code:
+          description: "User's zip code"
+          type: string
+          maxLength: 5
+          minLength: 5
+          example: 2B500
+        town:
+          description: "User's town"
+          type: string
+          maxLength: 35
+          example: Toulouse
+        created_at:
+          description: 'Initial creation timestamp'
+          type: string
+          format: date-time
+          readOnly: true
+        updated_at:
+          description: 'Last update timestamp'
+          type: string
+          format: date-time
+          readOnly: true
+      type: object

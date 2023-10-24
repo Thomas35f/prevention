@@ -1,0 +1,155 @@
+.single-slider {
+    background-image: linear-gradient(90deg, rgba(38, 39, 56, 0.8211659663865546) 100%, rgba(196, 195, 200, 0.9108018207282913) 100%), url('../images/road.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.auth {
+    padding-left: 30px;
+    padding-right: 40px;
+    width: 35%;
+    margin: 100px auto 200px auto; /* center horizontally */
+    background-color: rgba(0, 8, 23, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 50px 80px rgba(0, 0, 0, 0.8);
+    padding-bottom: 15px;
+}
+
+.register{
+    width: 30%;
+
+}
+
+@media (max-width: 1000px) {
+    .auth {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.auth h2 {
+    font-size: 50px;
+    color: #f15f22;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.auth label {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.auth input {
+    max-width: 100%;
+    font-size: 18px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.auth input:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 1px #FF5F13;
+    border-color: #FF5F13 !important;
+}
+
+.btn-register {
+    margin-left: 50px;
+    width: 30%;
+    background: #ea4c00;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Barlow", sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 0
+
+}
+
+.btn-register:hover {
+    background-color: #ea4c00;
+    color: white;
+    box-shadow: 1px 0px 5px #000000;
+    transform: scale(1.02);
+}
+
+.btn-login {
+    margin-left: 50px;
+    width: 25% !important;
+    background: #ea4c00;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Barlow", sans-serif;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 0
+
+}
+
+.btn-login:hover{
+    background-color: #ea4c00;
+    color: white;
+    box-shadow: 1px 0px 5px #000000;
+    transform: scale(1.02);
+}
+
+@media (max-width: 1000px) {
+    .auth {
+        margin-top: 50px;
+        margin-bottom: 0;
+        width: 70%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .auth h2 {
+        margin-top: 0;
+        font-size: 36px;
+    }
+
+    .auth label {
+        font-size: 14px;
+    }
+
+    .auth input {
+        font-size: 16px;
+    }
+
+    .btn-register {
+        margin-left: 20px;
+        width: 30%;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .auth {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .auth {
+        margin-bottom: 50px;
+    }
+
+    .flex{
+        margin-left: -200px;
+        margin-right: 20px;
+    }
+
+    .btn-login {
+        margin-left: 20px!important;
+        width: 100%;
+    }
+}
+
+
+

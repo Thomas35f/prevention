@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/stephane/Projets/prevention/app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="_css/bootstrap.min.css?v=9.2.28" rel="stylesheet" type="text/css">
+  <link href="_css/nv.d3.min.css?v=9.2.28" rel="stylesheet" type="text/css">
+  <link href="_css/style.css?v=9.2.28" rel="stylesheet" type="text/css">
+  <link href="_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">/home/stephane/Projets/prevention/app</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Console/Commands/MakeDtoCommand.php.html#12">App\Console\Commands\MakeDtoCommand</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/API/CenterController.php.html#10">App\Http\Controllers\API\CenterController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/API/GridController.php.html#10">App\Http\Controllers\API\GridController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/API/SubClientController.php.html#11">App\Http\Controllers\API\SubClientController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/EmailVerificationNotificationController.php.html#9">App\Http\Controllers\Auth\EmailVerificationNotificationController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/GenerateApiToken.php.html#12">App\Http\Controllers\Auth\GenerateApiToken</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ClientController.php.html#11">App\Http\Controllers\ClientController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/CompanyController.php.html#8">App\Http\Controllers\CompanyController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/CourseController.php.html#9">App\Http\Controllers\CourseController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/TrainerController.php.html#13">App\Http\Controllers\TrainerController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/CheckAbility.php.html#9">App\Http\Middleware\CheckAbility</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/TrustHosts.php.html#7">App\Http\Middleware\TrustHosts</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/ApiRequest.php.html#10">App\Http\Requests\ApiRequest</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mail/WelcomeMail.php.html#14">App\Mail\WelcomeMail</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Supervisor.php.html#12">App\Models\Supervisor</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Trainer.php.html#14">App\Models\Trainer</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/AbilityProvider.php.html#10">App\Providers\AbilityProvider</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/BroadcastServiceProvider.php.html#8">App\Providers\BroadcastServiceProvider</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/RepositoryProvider.php.html#11">App\Providers\RepositoryProvider</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/ClientRepository.php.html#9">App\Repositories\ClientRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/GridRepository.php.html#9">App\Repositories\GridRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ClientService.php.html#9">App\Services\ClientService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="View/Components/AppLayout.php.html#8">App\View\Components\AppLayout</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="dtos/ClientDto.php.html#5">App\dtos\ClientDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="dtos/CompanyDto.php.html#8">App\dtos\CompanyDto</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/RegisteredUserController.php.html#23">App\Http\Controllers\Auth\RegisteredUserController</a></td><td class="text-right">3%</td></tr>
+       <tr><td><a href="Models/Client.php.html#14">App\Models\Client</a></td><td class="text-right">20%</td></tr>
+       <tr><td><a href="Models/Subclient.php.html#15">App\Models\Subclient</a></td><td class="text-right">25%</td></tr>
+       <tr><td><a href="Http/Controllers/API/TrainingController.php.html#13">App\Http\Controllers\API\TrainingController</a></td><td class="text-right">26%</td></tr>
+       <tr><td><a href="Models/Center.php.html#27">App\Models\Center</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/AuthenticatedSessionController.php.html#14">App\Http\Controllers\Auth\AuthenticatedSessionController</a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Models/Training.php.html#55">App\Models\Training</a></td><td class="text-right">62%</td></tr>
+       <tr><td><a href="Http/Requests/Auth/LoginRequest.php.html#12">App\Http\Requests\Auth\LoginRequest</a></td><td class="text-right">65%</td></tr>
+       <tr><td><a href="Console/Commands/CreateClients.php.html#12">App\Console\Commands\CreateClients</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/EmailVerificationPromptController.php.html#9">App\Http\Controllers\Auth\EmailVerificationPromptController</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Models/Grid.php.html#33">App\Models\Grid</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Console/Commands/CreateSubclient.php.html#13">App\Console\Commands\CreateSubclient</a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="Console/Commands/CreateFeatures.php.html#11">App\Console\Commands\CreateFeatures</a></td><td class="text-right">73%</td></tr>
+       <tr><td><a href="Console/Commands/CreateOffers.php.html#14">App\Console\Commands\CreateOffers</a></td><td class="text-right">73%</td></tr>
+       <tr><td><a href="Models/Learner.php.html#28">App\Models\Learner</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Models/InheritedModel.php.html#11">App\Models\InheritedModel</a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/VerifyEmailController.php.html#10">App\Http\Controllers\Auth\VerifyEmailController</a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#10">App\Http\Middleware\RedirectIfAuthenticated</a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Console/Commands/CreateCenters.php.html#13">App\Console\Commands\CreateCenters</a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Console/Commands/CreateUsers.php.html#13">App\Console\Commands\CreateUsers</a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="Console/Commands/CreateAbilities.php.html#14">App\Console\Commands\CreateAbilities</a></td><td class="text-right">87%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Providers/RepositoryProvider.php.html#11">App\Providers\RepositoryProvider</a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Models/Subclient.php.html#15">App\Models\Subclient</a></td><td class="text-right">35</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/RegisteredUserController.php.html#23">App\Http\Controllers\Auth\RegisteredUserController</a></td><td class="text-right">18</td></tr>
+       <tr><td><a href="Http/Controllers/API/TrainingController.php.html#13">App\Http\Controllers\API\TrainingController</a></td><td class="text-right">15</td></tr>
+       <tr><td><a href="Console/Commands/CreateAbilities.php.html#14">App\Console\Commands\CreateAbilities</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/GenerateApiToken.php.html#12">App\Http\Controllers\Auth\GenerateApiToken</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Http/Requests/Auth/LoginRequest.php.html#12">App\Http\Requests\Auth\LoginRequest</a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Models/InheritedModel.php.html#11">App\Models\InheritedModel</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/EmailVerificationNotificationController.php.html#9">App\Http\Controllers\Auth\EmailVerificationNotificationController</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Console/Commands/CreateClients.php.html#12">App\Console\Commands\CreateClients</a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Console/Commands/CreateSubclient.php.html#13">App\Console\Commands\CreateSubclient</a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Console/Commands/CreateFeatures.php.html#11">App\Console\Commands\CreateFeatures</a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Console/Commands/CreateOffers.php.html#14">App\Console\Commands\CreateOffers</a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#10">App\Http\Middleware\RedirectIfAuthenticated</a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Console/Commands/CreateCenters.php.html#13">App\Console\Commands\CreateCenters</a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Console/Commands/CreateUsers.php.html#13">App\Console\Commands\CreateUsers</a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/VerifyEmailController.php.html#10">App\Http\Controllers\Auth\VerifyEmailController</a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/EmailVerificationPromptController.php.html#9">App\Http\Controllers\Auth\EmailVerificationPromptController</a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Console/Commands/MakeDtoCommand.php.html#52"><abbr title="App\Console\Commands\MakeDtoCommand::rootNamespace">rootNamespace</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Commands/MakeDtoCommand.php.html#63"><abbr title="App\Console\Commands\MakeDtoCommand::getPath">getPath</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Commands/MakeDtoCommand.php.html#73"><abbr title="App\Console\Commands\MakeDtoCommand::getStub">getStub</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Console/Commands/MakeDtoCommand.php.html#85"><abbr title="App\Console\Commands\MakeDtoCommand::getOptions">getOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/API/CenterController.php.html#14"><abbr title="App\Http\Controllers\API\CenterController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/API/CenterController.php.html#18"><abbr title="App\Http\Controllers\API\CenterController::getCentersForCurrentUser">getCentersForCurrentUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/API/GridController.php.html#14"><abbr title="App\Http\Controllers\API\GridController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/API/GridController.php.html#19"><abbr title="App\Http\Controllers\API\GridController::getGridsForCurrentUser">getGridsForCurrentUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/API/SubClientController.php.html#13"><abbr title="App\Http\Controllers\API\SubClientController::getSubClientsForCurrentUser">getSubClientsForCurrentUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/API/TrainingController.php.html#44"><abbr title="App\Http\Controllers\API\TrainingController::getTrainingsForCurrentUser">getTrainingsForCurrentUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/API/TrainingController.php.html#129"><abbr title="App\Http\Controllers\API\TrainingController::getTrainingById">getTrainingById</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/AuthenticatedSessionController.php.html#44"><abbr title="App\Http\Controllers\Auth\AuthenticatedSessionController::destroy">destroy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/EmailVerificationNotificationController.php.html#17"><abbr title="App\Http\Controllers\Auth\EmailVerificationNotificationController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/GenerateApiToken.php.html#14"><abbr title="App\Http\Controllers\Auth\GenerateApiToken::makeToken">makeToken</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/RegisteredUserController.php.html#42"><abbr title="App\Http\Controllers\Auth\RegisteredUserController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/RegisteredUserController.php.html#69"><abbr title="App\Http\Controllers\Auth\RegisteredUserController::sendMail">sendMail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ClientController.php.html#15"><abbr title="App\Http\Controllers\ClientController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/ClientController.php.html#20"><abbr title="App\Http\Controllers\ClientController::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/CompanyController.php.html#12"><abbr title="App\Http\Controllers\CompanyController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/CompanyController.php.html#16"><abbr title="App\Http\Controllers\CompanyController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/CourseController.php.html#16"><abbr title="App\Http\Controllers\CourseController::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/TrainerController.php.html#17"><abbr title="App\Http\Controllers\TrainerController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/TrainerController.php.html#21"><abbr title="App\Http\Controllers\TrainerController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/CheckAbility.php.html#16"><abbr title="App\Http\Middleware\CheckAbility::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/TrustHosts.php.html#14"><abbr title="App\Http\Middleware\TrustHosts::hosts">hosts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/ApiRequest.php.html#15"><abbr title="App\Http\Requests\ApiRequest::failedValidation">failedValidation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mail/WelcomeMail.php.html#24"><abbr title="App\Mail\WelcomeMail::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mail/WelcomeMail.php.html#32"><abbr title="App\Mail\WelcomeMail::envelope">envelope</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mail/WelcomeMail.php.html#45"><abbr title="App\Mail\WelcomeMail::content">content</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Mail/WelcomeMail.php.html#57"><abbr title="App\Mail\WelcomeMail::attachments">attachments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Center.php.html#59"><abbr title="App\Models\Center::client">client</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Client.php.html#35"><abbr title="App\Models\Client::subclients">subclients</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Client.php.html#45"><abbr title="App\Models\Client::users">users</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Client.php.html#55"><abbr title="App\Models\Client::centers">centers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Client.php.html#65"><abbr title="App\Models\Client::grids">grids</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Grid.php.html#73"><abbr title="App\Models\Grid::client">client</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Learner.php.html#47"><abbr title="App\Models\Learner::vehicle">vehicle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Subclient.php.html#26"><abbr title="App\Models\Subclient::company">company</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Subclient.php.html#34"><abbr title="App\Models\Subclient::client">client</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Subclient.php.html#42"><abbr title="App\Models\Subclient::learners">learners</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Subclient.php.html#59"><abbr title="App\Models\Subclient::isModelExists">isModelExists</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Supervisor.php.html#21"><abbr title="App\Models\Supervisor::user">user</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Trainer.php.html#25"><abbr title="App\Models\Trainer::user">user</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Trainer.php.html#33"><abbr title="App\Models\Trainer::trainings">trainings</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Trainer.php.html#41"><abbr title="App\Models\Trainer::learners">learners</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Trainer.php.html#49"><abbr title="App\Models\Trainer::subclients">subclients</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Training.php.html#124"><abbr title="App\Models\Training::subclients">subclients</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/AbilityProvider.php.html#13"><abbr title="App\Providers\AbilityProvider::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/AbilityProvider.php.html#24"><abbr title="App\Providers\AbilityProvider::register">register</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/AbilityProvider.php.html#34"><abbr title="App\Providers\AbilityProvider::boot">boot</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/AbilityProvider.php.html#39"><abbr title="App\Providers\AbilityProvider::getAbilities">getAbilities</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/BroadcastServiceProvider.php.html#15"><abbr title="App\Providers\BroadcastServiceProvider::boot">boot</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/RepositoryProvider.php.html#18"><abbr title="App\Providers\RepositoryProvider::register">register</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/RepositoryProvider.php.html#28"><abbr title="App\Providers\RepositoryProvider::boot">boot</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/RepositoryProvider.php.html#33"><abbr title="App\Providers\RepositoryProvider::getAbilities">getAbilities</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/ClientRepository.php.html#12"><abbr title="App\Repositories\ClientRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/ClientRepository.php.html#17"><abbr title="App\Repositories\ClientRepository::getAll">getAll</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/ClientRepository.php.html#22"><abbr title="App\Repositories\ClientRepository::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/GridRepository.php.html#13"><abbr title="App\Repositories\GridRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/GridRepository.php.html#18"><abbr title="App\Repositories\GridRepository::getGridsByClientId">getGridsByClientId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repositories/TrainingRepository.php.html#47"><abbr title="App\Repositories\TrainingRepository::getTrainingById">getTrainingById</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ClientService.php.html#12"><abbr title="App\Services\ClientService::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/ClientService.php.html#17"><abbr title="App\Services\ClientService::store">store</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="View/Components/AppLayout.php.html#13"><abbr title="App\View\Components\AppLayout::render">render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="dtos/ClientDto.php.html#7"><abbr title="App\dtos\ClientDto::toJson">toJson</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="dtos/ClientDto.php.html#12"><abbr title="App\dtos\ClientDto::toModel">toModel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="dtos/ClientDto.php.html#17"><abbr title="App\dtos\ClientDto::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="dtos/ClientDto.php.html#25"><abbr title="App\dtos\ClientDto::defaults">defaults</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="dtos/ClientDto.php.html#33"><abbr title="App\dtos\ClientDto::mapBeforeExport">mapBeforeExport</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="dtos/CompanyDto.php.html#10"><abbr title="App\dtos\CompanyDto::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="dtos/CompanyDto.php.html#16"><abbr title="App\dtos\CompanyDto::fromRequest">fromRequest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="dtos/CompanyDto.php.html#21"><abbr title="App\dtos\CompanyDto::toJson">toJson</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="dtos/CompanyDto.php.html#26"><abbr title="App\dtos\CompanyDto::toModel">toModel</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="dtos/CompanyDto.php.html#31"><abbr title="App\dtos\CompanyDto::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="dtos/CompanyDto.php.html#39"><abbr title="App\dtos\CompanyDto::defaults">defaults</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="dtos/CompanyDto.php.html#47"><abbr title="App\dtos\CompanyDto::mapBeforeExport">mapBeforeExport</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Requests/Auth/LoginRequest.php.html#66"><abbr title="App\Http\Requests\Auth\LoginRequest::ensureIsNotRateLimited">ensureIsNotRateLimited</abbr></a></td><td class="text-right">20%</td></tr>
+       <tr><td><a href="Models/Subclient.php.html#47"><abbr title="App\Models\Subclient::__callStatic">__callStatic</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Console/Commands/CreateClients.php.html#44"><abbr title="App\Console\Commands\CreateClients::handle">handle</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/EmailVerificationPromptController.php.html#17"><abbr title="App\Http\Controllers\Auth\EmailVerificationPromptController::__invoke">__invoke</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Console/Commands/CreateSubclient.php.html#41"><abbr title="App\Console\Commands\CreateSubclient::handle">handle</abbr></a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="Models/InheritedModel.php.html#15"><abbr title="App\Models\InheritedModel::__callStatic">__callStatic</abbr></a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="Console/Commands/CreateFeatures.php.html#60"><abbr title="App\Console\Commands\CreateFeatures::handle">handle</abbr></a></td><td class="text-right">73%</td></tr>
+       <tr><td><a href="Console/Commands/CreateOffers.php.html#56"><abbr title="App\Console\Commands\CreateOffers::handle">handle</abbr></a></td><td class="text-right">73%</td></tr>
+       <tr><td><a href="Console/Commands/CreateAbilities.php.html#125"><abbr title="App\Console\Commands\CreateAbilities::addAbilities">addAbilities</abbr></a></td><td class="text-right">76%</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/VerifyEmailController.php.html#18"><abbr title="App\Http\Controllers\Auth\VerifyEmailController::__invoke">__invoke</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#20"><abbr title="App\Http\Middleware\RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Console/Commands/CreateCenters.php.html#41"><abbr title="App\Console\Commands\CreateCenters::handle">handle</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Console/Commands/CreateUsers.php.html#37"><abbr title="App\Console\Commands\CreateUsers::handle">handle</abbr></a></td><td class="text-right">86%</td></tr>
+       <tr><td><a href="Console/Commands/CreateAbilities.php.html#35"><abbr title="App\Console\Commands\CreateAbilities::handle">handle</abbr></a></td><td class="text-right">89%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Providers/RepositoryProvider.php.html#33"><abbr title="App\Providers\RepositoryProvider::getAbilities">getAbilities</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/GenerateApiToken.php.html#14"><abbr title="App\Http\Controllers\Auth\GenerateApiToken::makeToken">makeToken</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Console/Commands/CreateAbilities.php.html#35"><abbr title="App\Console\Commands\CreateAbilities::handle">handle</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Http/Controllers/API/TrainingController.php.html#129"><abbr title="App\Http\Controllers\API\TrainingController::getTrainingById">getTrainingById</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/EmailVerificationNotificationController.php.html#17"><abbr title="App\Http\Controllers\Auth\EmailVerificationNotificationController::store">store</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/RegisteredUserController.php.html#69"><abbr title="App\Http\Controllers\Auth\RegisteredUserController::sendMail">sendMail</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Models/Subclient.php.html#47"><abbr title="App\Models\Subclient::__callStatic">__callStatic</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Console/Commands/CreateClients.php.html#44"><abbr title="App\Console\Commands\CreateClients::handle">handle</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Console/Commands/CreateSubclient.php.html#41"><abbr title="App\Console\Commands\CreateSubclient::handle">handle</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Models/InheritedModel.php.html#15"><abbr title="App\Models\InheritedModel::__callStatic">__callStatic</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Console/Commands/CreateFeatures.php.html#60"><abbr title="App\Console\Commands\CreateFeatures::handle">handle</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Console/Commands/CreateOffers.php.html#56"><abbr title="App\Console\Commands\CreateOffers::handle">handle</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#20"><abbr title="App\Http\Middleware\RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Console/Commands/CreateCenters.php.html#41"><abbr title="App\Console\Commands\CreateCenters::handle">handle</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Http/Requests/Auth/LoginRequest.php.html#66"><abbr title="App\Http\Requests\Auth\LoginRequest::ensureIsNotRateLimited">ensureIsNotRateLimited</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Console/Commands/CreateUsers.php.html#37"><abbr title="App\Console\Commands\CreateUsers::handle">handle</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Console/Commands/CreateAbilities.php.html#125"><abbr title="App\Console\Commands\CreateAbilities::addAbilities">addAbilities</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/VerifyEmailController.php.html#18"><abbr title="App\Http\Controllers\Auth\VerifyEmailController::__invoke">__invoke</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Controllers/Auth/EmailVerificationPromptController.php.html#17"><abbr title="App\Http\Controllers\Auth\EmailVerificationPromptController::__invoke">__invoke</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.28</a> using <a href="https://secure.php.net/" target="_top">PHP 8.2.8</a> and <a href="https://phpunit.de/">PHPUnit 9.6.12</a> at Sat Sep 16 15:58:28 UTC 2023.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="_js/jquery.min.js?v=9.2.28" type="text/javascript"></script>
+  <script src="_js/d3.min.js?v=9.2.28" type="text/javascript"></script>
+  <script src="_js/nv.d3.min.js?v=9.2.28" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([25,1,0,3,0,0,1,6,5,5,2,57], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([76,0,0,1,0,0,1,2,5,5,1,95], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[87.05882352941177,12,"<a href=\"Console\/Commands\/CreateAbilities.php.html#14\">App\\Console\\Commands\\CreateAbilities<\/a>"],[80.95238095238095,4,"<a href=\"Console\/Commands\/CreateCenters.php.html#13\">App\\Console\\Commands\\CreateCenters<\/a>"],[66.66666666666666,5,"<a href=\"Console\/Commands\/CreateClients.php.html#12\">App\\Console\\Commands\\CreateClients<\/a>"],[100,1,"<a href=\"Console\/Commands\/CreateCriteria.php.html#10\">App\\Console\\Commands\\CreateCriteria<\/a>"],[73.68421052631578,4,"<a href=\"Console\/Commands\/CreateFeatures.php.html#11\">App\\Console\\Commands\\CreateFeatures<\/a>"],[100,1,"<a href=\"Console\/Commands\/CreateGrids.php.html#12\">App\\Console\\Commands\\CreateGrids<\/a>"],[73.68421052631578,4,"<a href=\"Console\/Commands\/CreateOffers.php.html#14\">App\\Console\\Commands\\CreateOffers<\/a>"],[100,4,"<a href=\"Console\/Commands\/CreateRoles.php.html#11\">App\\Console\\Commands\\CreateRoles<\/a>"],[72,5,"<a href=\"Console\/Commands\/CreateSubclient.php.html#13\">App\\Console\\Commands\\CreateSubclient<\/a>"],[100,1,"<a href=\"Console\/Commands\/CreateThemes.php.html#8\">App\\Console\\Commands\\CreateThemes<\/a>"],[86.66666666666667,4,"<a href=\"Console\/Commands\/CreateUsers.php.html#13\">App\\Console\\Commands\\CreateUsers<\/a>"],[93.15068493150685,5,"<a href=\"Console\/Commands\/Grids\/CreateGridACPDrivingPL.php.html#13\">App\\Console\\Commands\\Grids\\CreateGridACPDrivingPL<\/a>"],[100,1,"<a href=\"Console\/Commands\/LaunchData.php.html#7\">App\\Console\\Commands\\LaunchData<\/a>"],[0,4,"<a href=\"Console\/Commands\/MakeDtoCommand.php.html#12\">App\\Console\\Commands\\MakeDtoCommand<\/a>"],[100,1,"<a href=\"Console\/Kernel.php.html#7\">App\\Console\\Kernel<\/a>"],[100,1,"<a href=\"Exceptions\/Handler.php.html#8\">App\\Exceptions\\Handler<\/a>"],[100,4,"<a href=\"Http\/Controllers\/API\/AuthController.php.html#16\">App\\Http\\Controllers\\API\\AuthController<\/a>"],[100,3,"<a href=\"Http\/Controllers\/API\/BaseController.php.html#7\">App\\Http\\Controllers\\API\\BaseController<\/a>"],[0,2,"<a href=\"Http\/Controllers\/API\/CenterController.php.html#10\">App\\Http\\Controllers\\API\\CenterController<\/a>"],[0,2,"<a href=\"Http\/Controllers\/API\/GridController.php.html#10\">App\\Http\\Controllers\\API\\GridController<\/a>"],[100,1,"<a href=\"Http\/Controllers\/API\/LearnerController.php.html#16\">App\\Http\\Controllers\\API\\LearnerController<\/a>"],[0,1,"<a href=\"Http\/Controllers\/API\/SubClientController.php.html#11\">App\\Http\\Controllers\\API\\SubClientController<\/a>"],[26.31578947368421,5,"<a href=\"Http\/Controllers\/API\/TrainingController.php.html#13\">App\\Http\\Controllers\\API\\TrainingController<\/a>"],[100,1,"<a href=\"Http\/Controllers\/API\/VehicleController.php.html#11\">App\\Http\\Controllers\\API\\VehicleController<\/a>"],[60,3,"<a href=\"Http\/Controllers\/Auth\/AuthenticatedSessionController.php.html#14\">App\\Http\\Controllers\\Auth\\AuthenticatedSessionController<\/a>"],[100,3,"<a href=\"Http\/Controllers\/Auth\/ConfirmablePasswordController.php.html#11\">App\\Http\\Controllers\\Auth\\ConfirmablePasswordController<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Auth\/EmailVerificationNotificationController.php.html#9\">App\\Http\\Controllers\\Auth\\EmailVerificationNotificationController<\/a>"],[66.66666666666666,2,"<a href=\"Http\/Controllers\/Auth\/EmailVerificationPromptController.php.html#9\">App\\Http\\Controllers\\Auth\\EmailVerificationPromptController<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Auth\/GenerateApiToken.php.html#12\">App\\Http\\Controllers\\Auth\\GenerateApiToken<\/a>"],[100,3,"<a href=\"Http\/Controllers\/Auth\/NewPasswordController.php.html#13\">App\\Http\\Controllers\\Auth\\NewPasswordController<\/a>"],[100,1,"<a href=\"Http\/Controllers\/Auth\/PasswordController.php.html#10\">App\\Http\\Controllers\\Auth\\PasswordController<\/a>"],[100,3,"<a href=\"Http\/Controllers\/Auth\/PasswordResetLinkController.php.html#9\">App\\Http\\Controllers\\Auth\\PasswordResetLinkController<\/a>"],[3.125,4,"<a href=\"Http\/Controllers\/Auth\/RegisteredUserController.php.html#23\">App\\Http\\Controllers\\Auth\\RegisteredUserController<\/a>"],[80,3,"<a href=\"Http\/Controllers\/Auth\/VerifyEmailController.php.html#10\">App\\Http\\Controllers\\Auth\\VerifyEmailController<\/a>"],[0,2,"<a href=\"Http\/Controllers\/ClientController.php.html#11\">App\\Http\\Controllers\\ClientController<\/a>"],[0,2,"<a href=\"Http\/Controllers\/CompanyController.php.html#8\">App\\Http\\Controllers\\CompanyController<\/a>"],[100,1,"<a href=\"Http\/Controllers\/ContactController.php.html#7\">App\\Http\\Controllers\\ContactController<\/a>"],[100,0,"<a href=\"Http\/Controllers\/Controller.php.html#10\">App\\Http\\Controllers\\Controller<\/a>"],[0,1,"<a href=\"Http\/Controllers\/CourseController.php.html#9\">App\\Http\\Controllers\\CourseController<\/a>"],[100,1,"<a href=\"Http\/Controllers\/DashboardController.php.html#13\">App\\Http\\Controllers\\DashboardController<\/a>"],[100,1,"<a href=\"Http\/Controllers\/HomeController.php.html#13\">App\\Http\\Controllers\\HomeController<\/a>"],[100,2,"<a href=\"Http\/Controllers\/OfferController.php.html#10\">App\\Http\\Controllers\\OfferController<\/a>"],[100,4,"<a href=\"Http\/Controllers\/ProfileController.php.html#10\">App\\Http\\Controllers\\ProfileController<\/a>"],[0,2,"<a href=\"Http\/Controllers\/TrainerController.php.html#13\">App\\Http\\Controllers\\TrainerController<\/a>"],[100,0,"<a href=\"Http\/Kernel.php.html#9\">App\\Http\\Kernel<\/a>"],[100,2,"<a href=\"Http\/Middleware\/Authenticate.php.html#7\">App\\Http\\Middleware\\Authenticate<\/a>"],[0,1,"<a href=\"Http\/Middleware\/CheckAbility.php.html#9\">App\\Http\\Middleware\\CheckAbility<\/a>"],[100,0,"<a href=\"Http\/Middleware\/EncryptCookies.php.html#7\">App\\Http\\Middleware\\EncryptCookies<\/a>"],[100,0,"<a href=\"Http\/Middleware\/PreventRequestsDuringMaintenance.php.html#7\">App\\Http\\Middleware\\PreventRequestsDuringMaintenance<\/a>"],[80,4,"<a href=\"Http\/Middleware\/RedirectIfAuthenticated.php.html#10\">App\\Http\\Middleware\\RedirectIfAuthenticated<\/a>"],[100,0,"<a href=\"Http\/Middleware\/TrimStrings.php.html#7\">App\\Http\\Middleware\\TrimStrings<\/a>"],[0,1,"<a href=\"Http\/Middleware\/TrustHosts.php.html#7\">App\\Http\\Middleware\\TrustHosts<\/a>"],[100,0,"<a href=\"Http\/Middleware\/TrustProxies.php.html#8\">App\\Http\\Middleware\\TrustProxies<\/a>"],[100,0,"<a href=\"Http\/Middleware\/ValidateSignature.php.html#7\">App\\Http\\Middleware\\ValidateSignature<\/a>"],[100,0,"<a href=\"Http\/Middleware\/VerifyCsrfToken.php.html#7\">App\\Http\\Middleware\\VerifyCsrfToken<\/a>"],[0,1,"<a href=\"Http\/Requests\/ApiRequest.php.html#10\">App\\Http\\Requests\\ApiRequest<\/a>"],[65.21739130434783,7,"<a href=\"Http\/Requests\/Auth\/LoginRequest.php.html#12\">App\\Http\\Requests\\Auth\\LoginRequest<\/a>"],[100,2,"<a href=\"Http\/Requests\/Auth\/RegisterRequest.php.html#9\">App\\Http\\Requests\\Auth\\RegisterRequest<\/a>"],[100,2,"<a href=\"Http\/Requests\/CreateTrainingRequest.php.html#7\">App\\Http\\Requests\\CreateTrainingRequest<\/a>"],[100,1,"<a href=\"Http\/Requests\/ProfileUpdateRequest.php.html#9\">App\\Http\\Requests\\ProfileUpdateRequest<\/a>"],[100,2,"<a href=\"Http\/Requests\/StoreLearnerRequest.php.html#20\">App\\Http\\Requests\\StoreLearnerRequest<\/a>"],[100,3,"<a href=\"Http\/Requests\/VehicleRequest.php.html#16\">App\\Http\\Requests\\VehicleRequest<\/a>"],[0,4,"<a href=\"Mail\/WelcomeMail.php.html#14\">App\\Mail\\WelcomeMail<\/a>"],[100,1,"<a href=\"Models\/Ability.php.html#27\">App\\Models\\Ability<\/a>"],[50,2,"<a href=\"Models\/Center.php.html#27\">App\\Models\\Center<\/a>"],[20,5,"<a href=\"Models\/Client.php.html#14\">App\\Models\\Client<\/a>"],[100,0,"<a href=\"Models\/Company.php.html#36\">App\\Models\\Company<\/a>"],[100,2,"<a href=\"Models\/Course.php.html#51\">App\\Models\\Course<\/a>"],[100,2,"<a href=\"Models\/Criterion.php.html#33\">App\\Models\\Criterion<\/a>"],[100,1,"<a href=\"Models\/Feature.php.html#26\">App\\Models\\Feature<\/a>"],[66.66666666666666,3,"<a href=\"Models\/Grid.php.html#33\">App\\Models\\Grid<\/a>"],[78.57142857142857,6,"<a href=\"Models\/InheritedModel.php.html#11\">App\\Models\\InheritedModel<\/a>"],[75,4,"<a href=\"Models\/Learner.php.html#28\">App\\Models\\Learner<\/a>"],[100,2,"<a href=\"Models\/Offer.php.html#30\">App\\Models\\Offer<\/a>"],[100,2,"<a href=\"Models\/Role.php.html#31\">App\\Models\\Role<\/a>"],[25,8,"<a href=\"Models\/Subclient.php.html#15\">App\\Models\\Subclient<\/a>"],[0,1,"<a href=\"Models\/Supervisor.php.html#12\">App\\Models\\Supervisor<\/a>"],[100,1,"<a href=\"Models\/Theme.php.html#24\">App\\Models\\Theme<\/a>"],[0,4,"<a href=\"Models\/Trainer.php.html#14\">App\\Models\\Trainer<\/a>"],[62.5,6,"<a href=\"Models\/Training.php.html#55\">App\\Models\\Training<\/a>"],[100,2,"<a href=\"Models\/User.php.html#133\">App\\Models\\User<\/a>"],[100,1,"<a href=\"Models\/Vehicle.php.html#33\">App\\Models\\Vehicle<\/a>"],[100,0,"<a href=\"OpenApi.php.html#21\">App\\OpenApi<\/a>"],[0,4,"<a href=\"Providers\/AbilityProvider.php.html#10\">App\\Providers\\AbilityProvider<\/a>"],[100,2,"<a href=\"Providers\/AppServiceProvider.php.html#23\">App\\Providers\\AppServiceProvider<\/a>"],[100,1,"<a href=\"Providers\/AuthServiceProvider.php.html#8\">App\\Providers\\AuthServiceProvider<\/a>"],[0,1,"<a href=\"Providers\/BroadcastServiceProvider.php.html#8\">App\\Providers\\BroadcastServiceProvider<\/a>"],[100,2,"<a href=\"Providers\/EventServiceProvider.php.html#10\">App\\Providers\\EventServiceProvider<\/a>"],[0,9,"<a href=\"Providers\/RepositoryProvider.php.html#11\">App\\Providers\\RepositoryProvider<\/a>"],[100,3,"<a href=\"Providers\/RouteServiceProvider.php.html#11\">App\\Providers\\RouteServiceProvider<\/a>"],[100,2,"<a href=\"Repositories\/CenterRepository.php.html#9\">App\\Repositories\\CenterRepository<\/a>"],[0,3,"<a href=\"Repositories\/ClientRepository.php.html#9\">App\\Repositories\\ClientRepository<\/a>"],[100,2,"<a href=\"Repositories\/CompanyRepository.php.html#9\">App\\Repositories\\CompanyRepository<\/a>"],[0,2,"<a href=\"Repositories\/GridRepository.php.html#9\">App\\Repositories\\GridRepository<\/a>"],[100,0,"<a href=\"Repositories\/LearnerRepository.php.html#11\">App\\Repositories\\LearnerRepository<\/a>"],[100,2,"<a href=\"Repositories\/OfferRepository.php.html#9\">App\\Repositories\\OfferRepository<\/a>"],[100,2,"<a href=\"Repositories\/TrainerRepository.php.html#9\">App\\Repositories\\TrainerRepository<\/a>"],[94.44444444444444,4,"<a href=\"Repositories\/TrainingRepository.php.html#12\">App\\Repositories\\TrainingRepository<\/a>"],[0,2,"<a href=\"Services\/ClientService.php.html#9\">App\\Services\\ClientService<\/a>"],[100,0,"<a href=\"Services\/LearnerService.php.html#5\">App\\Services\\LearnerService<\/a>"],[0,1,"<a href=\"View\/Components\/AppLayout.php.html#8\">App\\View\\Components\\AppLayout<\/a>"],[100,1,"<a href=\"View\/Components\/GuestLayout.php.html#8\">App\\View\\Components\\GuestLayout<\/a>"],[0,5,"<a href=\"dtos\/ClientDto.php.html#5\">App\\dtos\\ClientDto<\/a>"],[0,7,"<a href=\"dtos\/CompanyDto.php.html#8\">App\\dtos\\CompanyDto<\/a>"],[100,0,"<a href=\"dtos\/Dto.php.html#7\">App\\dtos\\Dto<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[89.70588235294117,9,"<a href=\"Console\/Commands\/CreateAbilities.php.html#35\">App\\Console\\Commands\\CreateAbilities::handle<\/a>"],[76.47058823529412,3,"<a href=\"Console\/Commands\/CreateAbilities.php.html#125\">App\\Console\\Commands\\CreateAbilities::addAbilities<\/a>"],[80.95238095238095,4,"<a href=\"Console\/Commands\/CreateCenters.php.html#41\">App\\Console\\Commands\\CreateCenters::handle<\/a>"],[66.66666666666666,5,"<a href=\"Console\/Commands\/CreateClients.php.html#44\">App\\Console\\Commands\\CreateClients::handle<\/a>"],[100,1,"<a href=\"Console\/Commands\/CreateCriteria.php.html#31\">App\\Console\\Commands\\CreateCriteria::handle<\/a>"],[73.68421052631578,4,"<a href=\"Console\/Commands\/CreateFeatures.php.html#60\">App\\Console\\Commands\\CreateFeatures::handle<\/a>"],[100,1,"<a href=\"Console\/Commands\/CreateGrids.php.html#33\">App\\Console\\Commands\\CreateGrids::handle<\/a>"],[73.68421052631578,4,"<a href=\"Console\/Commands\/CreateOffers.php.html#56\">App\\Console\\Commands\\CreateOffers::handle<\/a>"],[100,4,"<a href=\"Console\/Commands\/CreateRoles.php.html#45\">App\\Console\\Commands\\CreateRoles::handle<\/a>"],[72,5,"<a href=\"Console\/Commands\/CreateSubclient.php.html#41\">App\\Console\\Commands\\CreateSubclient::handle<\/a>"],[100,1,"<a href=\"Console\/Commands\/CreateThemes.php.html#29\">App\\Console\\Commands\\CreateThemes::handle<\/a>"],[86.66666666666667,4,"<a href=\"Console\/Commands\/CreateUsers.php.html#37\">App\\Console\\Commands\\CreateUsers::handle<\/a>"],[93.15068493150685,5,"<a href=\"Console\/Commands\/Grids\/CreateGridACPDrivingPL.php.html#36\">App\\Console\\Commands\\Grids\\CreateGridACPDrivingPL::handle<\/a>"],[100,1,"<a href=\"Console\/Commands\/LaunchData.php.html#36\">App\\Console\\Commands\\LaunchData::handle<\/a>"],[0,1,"<a href=\"Console\/Commands\/MakeDtoCommand.php.html#52\">App\\Console\\Commands\\MakeDtoCommand::rootNamespace<\/a>"],[0,1,"<a href=\"Console\/Commands\/MakeDtoCommand.php.html#63\">App\\Console\\Commands\\MakeDtoCommand::getPath<\/a>"],[0,1,"<a href=\"Console\/Commands\/MakeDtoCommand.php.html#73\">App\\Console\\Commands\\MakeDtoCommand::getStub<\/a>"],[0,1,"<a href=\"Console\/Commands\/MakeDtoCommand.php.html#85\">App\\Console\\Commands\\MakeDtoCommand::getOptions<\/a>"],[100,1,"<a href=\"Console\/Kernel.php.html#35\">App\\Console\\Kernel::commands<\/a>"],[100,1,"<a href=\"Exceptions\/Handler.php.html#44\">App\\Exceptions\\Handler::register<\/a>"],[100,1,"<a href=\"Http\/Controllers\/API\/AuthController.php.html#19\">App\\Http\\Controllers\\API\\AuthController::__construct<\/a>"],[100,2,"<a href=\"Http\/Controllers\/API\/AuthController.php.html#24\">App\\Http\\Controllers\\API\\AuthController::login<\/a>"],[100,1,"<a href=\"Http\/Controllers\/API\/AuthController.php.html#38\">App\\Http\\Controllers\\API\\AuthController::register<\/a>"],[100,1,"<a href=\"Http\/Controllers\/API\/BaseController.php.html#9\">App\\Http\\Controllers\\API\\BaseController::handleResponse<\/a>"],[100,2,"<a href=\"Http\/Controllers\/API\/BaseController.php.html#19\">App\\Http\\Controllers\\API\\BaseController::handleError<\/a>"],[0,1,"<a href=\"Http\/Controllers\/API\/CenterController.php.html#14\">App\\Http\\Controllers\\API\\CenterController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/API\/CenterController.php.html#18\">App\\Http\\Controllers\\API\\CenterController::getCentersForCurrentUser<\/a>"],[0,1,"<a href=\"Http\/Controllers\/API\/GridController.php.html#14\">App\\Http\\Controllers\\API\\GridController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/API\/GridController.php.html#19\">App\\Http\\Controllers\\API\\GridController::getGridsForCurrentUser<\/a>"],[100,1,"<a href=\"Http\/Controllers\/API\/LearnerController.php.html#46\">App\\Http\\Controllers\\API\\LearnerController::store<\/a>"],[0,1,"<a href=\"Http\/Controllers\/API\/SubClientController.php.html#13\">App\\Http\\Controllers\\API\\SubClientController::getSubClientsForCurrentUser<\/a>"],[100,1,"<a href=\"Http\/Controllers\/API\/TrainingController.php.html#17\">App\\Http\\Controllers\\API\\TrainingController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/API\/TrainingController.php.html#44\">App\\Http\\Controllers\\API\\TrainingController::getTrainingsForCurrentUser<\/a>"],[100,1,"<a href=\"Http\/Controllers\/API\/TrainingController.php.html#82\">App\\Http\\Controllers\\API\\TrainingController::create<\/a>"],[0,2,"<a href=\"Http\/Controllers\/API\/TrainingController.php.html#129\">App\\Http\\Controllers\\API\\TrainingController::getTrainingById<\/a>"],[100,1,"<a href=\"Http\/Controllers\/API\/VehicleController.php.html#19\">App\\Http\\Controllers\\API\\VehicleController::store<\/a>"],[100,1,"<a href=\"Http\/Controllers\/Auth\/AuthenticatedSessionController.php.html#21\">App\\Http\\Controllers\\Auth\\AuthenticatedSessionController::create<\/a>"],[100,1,"<a href=\"Http\/Controllers\/Auth\/AuthenticatedSessionController.php.html#26\">App\\Http\\Controllers\\Auth\\AuthenticatedSessionController::store<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/AuthenticatedSessionController.php.html#44\">App\\Http\\Controllers\\Auth\\AuthenticatedSessionController::destroy<\/a>"],[100,1,"<a href=\"Http\/Controllers\/Auth\/ConfirmablePasswordController.php.html#18\">App\\Http\\Controllers\\Auth\\ConfirmablePasswordController::show<\/a>"],[100,2,"<a href=\"Http\/Controllers\/Auth\/ConfirmablePasswordController.php.html#29\">App\\Http\\Controllers\\Auth\\ConfirmablePasswordController::store<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Auth\/EmailVerificationNotificationController.php.html#17\">App\\Http\\Controllers\\Auth\\EmailVerificationNotificationController::store<\/a>"],[66.66666666666666,2,"<a href=\"Http\/Controllers\/Auth\/EmailVerificationPromptController.php.html#17\">App\\Http\\Controllers\\Auth\\EmailVerificationPromptController::__invoke<\/a>"],[0,3,"<a href=\"Http\/Controllers\/Auth\/GenerateApiToken.php.html#14\">App\\Http\\Controllers\\Auth\\GenerateApiToken::makeToken<\/a>"],[100,1,"<a href=\"Http\/Controllers\/Auth\/NewPasswordController.php.html#21\">App\\Http\\Controllers\\Auth\\NewPasswordController::create<\/a>"],[100,2,"<a href=\"Http\/Controllers\/Auth\/NewPasswordController.php.html#34\">App\\Http\\Controllers\\Auth\\NewPasswordController::store<\/a>"],[100,1,"<a href=\"Http\/Controllers\/Auth\/PasswordController.php.html#18\">App\\Http\\Controllers\\Auth\\PasswordController::update<\/a>"],[100,1,"<a href=\"Http\/Controllers\/Auth\/PasswordResetLinkController.php.html#16\">App\\Http\\Controllers\\Auth\\PasswordResetLinkController::create<\/a>"],[100,2,"<a href=\"Http\/Controllers\/Auth\/PasswordResetLinkController.php.html#29\">App\\Http\\Controllers\\Auth\\PasswordResetLinkController::store<\/a>"],[100,1,"<a href=\"Http\/Controllers\/Auth\/RegisteredUserController.php.html#30\">App\\Http\\Controllers\\Auth\\RegisteredUserController::create<\/a>"],[0,1,"<a href=\"Http\/Controllers\/Auth\/RegisteredUserController.php.html#42\">App\\Http\\Controllers\\Auth\\RegisteredUserController::store<\/a>"],[0,2,"<a href=\"Http\/Controllers\/Auth\/RegisteredUserController.php.html#69\">App\\Http\\Controllers\\Auth\\RegisteredUserController::sendMail<\/a>"],[80,3,"<a href=\"Http\/Controllers\/Auth\/VerifyEmailController.php.html#18\">App\\Http\\Controllers\\Auth\\VerifyEmailController::__invoke<\/a>"],[0,1,"<a href=\"Http\/Controllers\/ClientController.php.html#15\">App\\Http\\Controllers\\ClientController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/ClientController.php.html#20\">App\\Http\\Controllers\\ClientController::store<\/a>"],[0,1,"<a href=\"Http\/Controllers\/CompanyController.php.html#12\">App\\Http\\Controllers\\CompanyController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/CompanyController.php.html#16\">App\\Http\\Controllers\\CompanyController::index<\/a>"],[100,1,"<a href=\"Http\/Controllers\/ContactController.php.html#15\">App\\Http\\Controllers\\ContactController::create<\/a>"],[0,1,"<a href=\"Http\/Controllers\/CourseController.php.html#16\">App\\Http\\Controllers\\CourseController::create<\/a>"],[100,1,"<a href=\"Http\/Controllers\/DashboardController.php.html#15\">App\\Http\\Controllers\\DashboardController::create<\/a>"],[100,1,"<a href=\"Http\/Controllers\/HomeController.php.html#15\">App\\Http\\Controllers\\HomeController::create<\/a>"],[100,1,"<a href=\"Http\/Controllers\/OfferController.php.html#15\">App\\Http\\Controllers\\OfferController::__construct<\/a>"],[100,1,"<a href=\"Http\/Controllers\/OfferController.php.html#25\">App\\Http\\Controllers\\OfferController::index<\/a>"],[100,1,"<a href=\"Http\/Controllers\/ProfileController.php.html#18\">App\\Http\\Controllers\\ProfileController::edit<\/a>"],[100,2,"<a href=\"Http\/Controllers\/ProfileController.php.html#31\">App\\Http\\Controllers\\ProfileController::update<\/a>"],[100,1,"<a href=\"Http\/Controllers\/ProfileController.php.html#50\">App\\Http\\Controllers\\ProfileController::destroy<\/a>"],[0,1,"<a href=\"Http\/Controllers\/TrainerController.php.html#17\">App\\Http\\Controllers\\TrainerController::__construct<\/a>"],[0,1,"<a href=\"Http\/Controllers\/TrainerController.php.html#21\">App\\Http\\Controllers\\TrainerController::index<\/a>"],[100,2,"<a href=\"Http\/Middleware\/Authenticate.php.html#15\">App\\Http\\Middleware\\Authenticate::redirectTo<\/a>"],[0,1,"<a href=\"Http\/Middleware\/CheckAbility.php.html#16\">App\\Http\\Middleware\\CheckAbility::handle<\/a>"],[80,4,"<a href=\"Http\/Middleware\/RedirectIfAuthenticated.php.html#20\">App\\Http\\Middleware\\RedirectIfAuthenticated::handle<\/a>"],[0,1,"<a href=\"Http\/Middleware\/TrustHosts.php.html#14\">App\\Http\\Middleware\\TrustHosts::hosts<\/a>"],[0,1,"<a href=\"Http\/Requests\/ApiRequest.php.html#15\">App\\Http\\Requests\\ApiRequest::failedValidation<\/a>"],[100,1,"<a href=\"Http\/Requests\/Auth\/LoginRequest.php.html#19\">App\\Http\\Requests\\Auth\\LoginRequest::authorize<\/a>"],[100,1,"<a href=\"Http\/Requests\/Auth\/LoginRequest.php.html#29\">App\\Http\\Requests\\Auth\\LoginRequest::rules<\/a>"],[100,2,"<a href=\"Http\/Requests\/Auth\/LoginRequest.php.html#44\">App\\Http\\Requests\\Auth\\LoginRequest::authenticate<\/a>"],[20,2,"<a href=\"Http\/Requests\/Auth\/LoginRequest.php.html#66\">App\\Http\\Requests\\Auth\\LoginRequest::ensureIsNotRateLimited<\/a>"],[100,1,"<a href=\"Http\/Requests\/Auth\/LoginRequest.php.html#89\">App\\Http\\Requests\\Auth\\LoginRequest::throttleKey<\/a>"],[100,1,"<a href=\"Http\/Requests\/Auth\/RegisterRequest.php.html#16\">App\\Http\\Requests\\Auth\\RegisterRequest::authorize<\/a>"],[100,1,"<a href=\"Http\/Requests\/Auth\/RegisterRequest.php.html#26\">App\\Http\\Requests\\Auth\\RegisterRequest::rules<\/a>"],[100,1,"<a href=\"Http\/Requests\/CreateTrainingRequest.php.html#12\">App\\Http\\Requests\\CreateTrainingRequest::authorize<\/a>"],[100,1,"<a href=\"Http\/Requests\/CreateTrainingRequest.php.html#22\">App\\Http\\Requests\\CreateTrainingRequest::rules<\/a>"],[100,1,"<a href=\"Http\/Requests\/ProfileUpdateRequest.php.html#16\">App\\Http\\Requests\\ProfileUpdateRequest::rules<\/a>"],[100,1,"<a href=\"Http\/Requests\/StoreLearnerRequest.php.html#25\">App\\Http\\Requests\\StoreLearnerRequest::authorize<\/a>"],[100,1,"<a href=\"Http\/Requests\/StoreLearnerRequest.php.html#35\">App\\Http\\Requests\\StoreLearnerRequest::rules<\/a>"],[100,1,"<a href=\"Http\/Requests\/VehicleRequest.php.html#23\">App\\Http\\Requests\\VehicleRequest::authorize<\/a>"],[100,1,"<a href=\"Http\/Requests\/VehicleRequest.php.html#33\">App\\Http\\Requests\\VehicleRequest::rules<\/a>"],[100,1,"<a href=\"Http\/Requests\/VehicleRequest.php.html#43\">App\\Http\\Requests\\VehicleRequest::messages<\/a>"],[0,1,"<a href=\"Mail\/WelcomeMail.php.html#24\">App\\Mail\\WelcomeMail::__construct<\/a>"],[0,1,"<a href=\"Mail\/WelcomeMail.php.html#32\">App\\Mail\\WelcomeMail::envelope<\/a>"],[0,1,"<a href=\"Mail\/WelcomeMail.php.html#45\">App\\Mail\\WelcomeMail::content<\/a>"],[0,1,"<a href=\"Mail\/WelcomeMail.php.html#57\">App\\Mail\\WelcomeMail::attachments<\/a>"],[100,1,"<a href=\"Models\/Ability.php.html#39\">App\\Models\\Ability::role<\/a>"],[100,1,"<a href=\"Models\/Center.php.html#48\">App\\Models\\Center::trainings<\/a>"],[0,1,"<a href=\"Models\/Center.php.html#59\">App\\Models\\Center::client<\/a>"],[100,1,"<a href=\"Models\/Client.php.html#25\">App\\Models\\Client::company<\/a>"],[0,1,"<a href=\"Models\/Client.php.html#35\">App\\Models\\Client::subclients<\/a>"],[0,1,"<a href=\"Models\/Client.php.html#45\">App\\Models\\Client::users<\/a>"],[0,1,"<a href=\"Models\/Client.php.html#55\">App\\Models\\Client::centers<\/a>"],[0,1,"<a href=\"Models\/Client.php.html#65\">App\\Models\\Client::grids<\/a>"],[100,1,"<a href=\"Models\/Course.php.html#69\">App\\Models\\Course::training<\/a>"],[100,1,"<a href=\"Models\/Course.php.html#79\">App\\Models\\Course::grid<\/a>"],[100,1,"<a href=\"Models\/Criterion.php.html#54\">App\\Models\\Criterion::grids<\/a>"],[100,1,"<a href=\"Models\/Criterion.php.html#64\">App\\Models\\Criterion::themes<\/a>"],[100,1,"<a href=\"Models\/Feature.php.html#45\">App\\Models\\Feature::offer<\/a>"],[100,1,"<a href=\"Models\/Grid.php.html#53\">App\\Models\\Grid::courses<\/a>"],[100,1,"<a href=\"Models\/Grid.php.html#63\">App\\Models\\Grid::criteria<\/a>"],[0,1,"<a href=\"Models\/Grid.php.html#73\">App\\Models\\Grid::client<\/a>"],[72.72727272727273,5,"<a href=\"Models\/InheritedModel.php.html#15\">App\\Models\\InheritedModel::__callStatic<\/a>"],[100,1,"<a href=\"Models\/InheritedModel.php.html#40\">App\\Models\\InheritedModel::isModelExists<\/a>"],[100,1,"<a href=\"Models\/Learner.php.html#39\">App\\Models\\Learner::user<\/a>"],[0,1,"<a href=\"Models\/Learner.php.html#47\">App\\Models\\Learner::vehicle<\/a>"],[100,1,"<a href=\"Models\/Learner.php.html#55\">App\\Models\\Learner::subclient<\/a>"],[100,1,"<a href=\"Models\/Learner.php.html#63\">App\\Models\\Learner::trainings<\/a>"],[100,1,"<a href=\"Models\/Offer.php.html#52\">App\\Models\\Offer::trainings<\/a>"],[100,1,"<a href=\"Models\/Offer.php.html#63\">App\\Models\\Offer::features<\/a>"],[100,1,"<a href=\"Models\/Role.php.html#53\">App\\Models\\Role::users<\/a>"],[100,1,"<a href=\"Models\/Role.php.html#63\">App\\Models\\Role::abilities<\/a>"],[0,1,"<a href=\"Models\/Subclient.php.html#26\">App\\Models\\Subclient::company<\/a>"],[0,1,"<a href=\"Models\/Subclient.php.html#34\">App\\Models\\Subclient::client<\/a>"],[0,1,"<a href=\"Models\/Subclient.php.html#42\">App\\Models\\Subclient::learners<\/a>"],[50,4,"<a href=\"Models\/Subclient.php.html#47\">App\\Models\\Subclient::__callStatic<\/a>"],[0,1,"<a href=\"Models\/Subclient.php.html#59\">App\\Models\\Subclient::isModelExists<\/a>"],[0,1,"<a href=\"Models\/Supervisor.php.html#21\">App\\Models\\Supervisor::user<\/a>"],[100,1,"<a href=\"Models\/Theme.php.html#45\">App\\Models\\Theme::criteria<\/a>"],[0,1,"<a href=\"Models\/Trainer.php.html#25\">App\\Models\\Trainer::user<\/a>"],[0,1,"<a href=\"Models\/Trainer.php.html#33\">App\\Models\\Trainer::trainings<\/a>"],[0,1,"<a href=\"Models\/Trainer.php.html#41\">App\\Models\\Trainer::learners<\/a>"],[0,1,"<a href=\"Models\/Trainer.php.html#49\">App\\Models\\Trainer::subclients<\/a>"],[100,1,"<a href=\"Models\/Training.php.html#74\">App\\Models\\Training::offer<\/a>"],[100,1,"<a href=\"Models\/Training.php.html#84\">App\\Models\\Training::center<\/a>"],[100,1,"<a href=\"Models\/Training.php.html#94\">App\\Models\\Training::trainer<\/a>"],[100,1,"<a href=\"Models\/Training.php.html#104\">App\\Models\\Training::learners<\/a>"],[100,1,"<a href=\"Models\/Training.php.html#114\">App\\Models\\Training::courses<\/a>"],[0,1,"<a href=\"Models\/Training.php.html#124\">App\\Models\\Training::subclients<\/a>"],[100,1,"<a href=\"Models\/User.php.html#179\">App\\Models\\User::client<\/a>"],[100,1,"<a href=\"Models\/User.php.html#189\">App\\Models\\User::role<\/a>"],[100,1,"<a href=\"Models\/Vehicle.php.html#56\">App\\Models\\Vehicle::learner<\/a>"],[0,1,"<a href=\"Providers\/AbilityProvider.php.html#13\">App\\Providers\\AbilityProvider::__construct<\/a>"],[0,1,"<a href=\"Providers\/AbilityProvider.php.html#24\">App\\Providers\\AbilityProvider::register<\/a>"],[0,1,"<a href=\"Providers\/AbilityProvider.php.html#34\">App\\Providers\\AbilityProvider::boot<\/a>"],[0,1,"<a href=\"Providers\/AbilityProvider.php.html#39\">App\\Providers\\AbilityProvider::getAbilities<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#30\">App\\Providers\\AppServiceProvider::register<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#47\">App\\Providers\\AppServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/AuthServiceProvider.php.html#24\">App\\Providers\\AuthServiceProvider::boot<\/a>"],[0,1,"<a href=\"Providers\/BroadcastServiceProvider.php.html#15\">App\\Providers\\BroadcastServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/EventServiceProvider.php.html#28\">App\\Providers\\EventServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/EventServiceProvider.php.html#38\">App\\Providers\\EventServiceProvider::shouldDiscoverEvents<\/a>"],[0,1,"<a href=\"Providers\/RepositoryProvider.php.html#18\">App\\Providers\\RepositoryProvider::register<\/a>"],[0,1,"<a href=\"Providers\/RepositoryProvider.php.html#28\">App\\Providers\\RepositoryProvider::boot<\/a>"],[0,7,"<a href=\"Providers\/RepositoryProvider.php.html#33\">App\\Providers\\RepositoryProvider::getAbilities<\/a>"],[100,1,"<a href=\"Providers\/RouteServiceProvider.php.html#31\">App\\Providers\\RouteServiceProvider::boot<\/a>"],[100,2,"<a href=\"Providers\/RouteServiceProvider.php.html#50\">App\\Providers\\RouteServiceProvider::configureRateLimiting<\/a>"],[100,1,"<a href=\"Repositories\/CenterRepository.php.html#13\">App\\Repositories\\CenterRepository::__construct<\/a>"],[100,1,"<a href=\"Repositories\/CenterRepository.php.html#18\">App\\Repositories\\CenterRepository::getCentersByClientId<\/a>"],[0,1,"<a href=\"Repositories\/ClientRepository.php.html#12\">App\\Repositories\\ClientRepository::__construct<\/a>"],[0,1,"<a href=\"Repositories\/ClientRepository.php.html#17\">App\\Repositories\\ClientRepository::getAll<\/a>"],[0,1,"<a href=\"Repositories\/ClientRepository.php.html#22\">App\\Repositories\\ClientRepository::store<\/a>"],[100,1,"<a href=\"Repositories\/CompanyRepository.php.html#13\">App\\Repositories\\CompanyRepository::__construct<\/a>"],[100,1,"<a href=\"Repositories\/CompanyRepository.php.html#18\">App\\Repositories\\CompanyRepository::getCompanies<\/a>"],[0,1,"<a href=\"Repositories\/GridRepository.php.html#13\">App\\Repositories\\GridRepository::__construct<\/a>"],[0,1,"<a href=\"Repositories\/GridRepository.php.html#18\">App\\Repositories\\GridRepository::getGridsByClientId<\/a>"],[100,1,"<a href=\"Repositories\/OfferRepository.php.html#13\">App\\Repositories\\OfferRepository::__construct<\/a>"],[100,1,"<a href=\"Repositories\/OfferRepository.php.html#18\">App\\Repositories\\OfferRepository::getAllOffers<\/a>"],[100,1,"<a href=\"Repositories\/TrainerRepository.php.html#13\">App\\Repositories\\TrainerRepository::__construct<\/a>"],[100,1,"<a href=\"Repositories\/TrainerRepository.php.html#18\">App\\Repositories\\TrainerRepository::getTrainers<\/a>"],[100,1,"<a href=\"Repositories\/TrainingRepository.php.html#16\">App\\Repositories\\TrainingRepository::__construct<\/a>"],[100,1,"<a href=\"Repositories\/TrainingRepository.php.html#21\">App\\Repositories\\TrainingRepository::getTrainingsByTrainerClientId<\/a>"],[100,1,"<a href=\"Repositories\/TrainingRepository.php.html#32\">App\\Repositories\\TrainingRepository::createTraining<\/a>"],[0,1,"<a href=\"Repositories\/TrainingRepository.php.html#47\">App\\Repositories\\TrainingRepository::getTrainingById<\/a>"],[0,1,"<a href=\"Services\/ClientService.php.html#12\">App\\Services\\ClientService::__construct<\/a>"],[0,1,"<a href=\"Services\/ClientService.php.html#17\">App\\Services\\ClientService::store<\/a>"],[0,1,"<a href=\"View\/Components\/AppLayout.php.html#13\">App\\View\\Components\\AppLayout::render<\/a>"],[100,1,"<a href=\"View\/Components\/GuestLayout.php.html#13\">App\\View\\Components\\GuestLayout::render<\/a>"],[0,1,"<a href=\"dtos\/ClientDto.php.html#7\">App\\dtos\\ClientDto::toJson<\/a>"],[0,1,"<a href=\"dtos\/ClientDto.php.html#12\">App\\dtos\\ClientDto::toModel<\/a>"],[0,1,"<a href=\"dtos\/ClientDto.php.html#17\">App\\dtos\\ClientDto::toArray<\/a>"],[0,1,"<a href=\"dtos\/ClientDto.php.html#25\">App\\dtos\\ClientDto::defaults<\/a>"],[0,1,"<a href=\"dtos\/ClientDto.php.html#33\">App\\dtos\\ClientDto::mapBeforeExport<\/a>"],[0,1,"<a href=\"dtos\/CompanyDto.php.html#10\">App\\dtos\\CompanyDto::__construct<\/a>"],[0,1,"<a href=\"dtos\/CompanyDto.php.html#16\">App\\dtos\\CompanyDto::fromRequest<\/a>"],[0,1,"<a href=\"dtos\/CompanyDto.php.html#21\">App\\dtos\\CompanyDto::toJson<\/a>"],[0,1,"<a href=\"dtos\/CompanyDto.php.html#26\">App\\dtos\\CompanyDto::toModel<\/a>"],[0,1,"<a href=\"dtos\/CompanyDto.php.html#31\">App\\dtos\\CompanyDto::toArray<\/a>"],[0,1,"<a href=\"dtos\/CompanyDto.php.html#39\">App\\dtos\\CompanyDto::defaults<\/a>"],[0,1,"<a href=\"dtos\/CompanyDto.php.html#47\">App\\dtos\\CompanyDto::mapBeforeExport<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

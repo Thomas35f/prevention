@@ -1,0 +1,44 @@
+@startuml
+autonumber
+actor Formateur as F
+participant "Application Web/Mobile" as A
+participant "API" as API
+database "Base de données" as DB
+
+F -> A: Commence la création d'une nouvelle journée de formation (entreprise, stagiaires, formateur, offre, centre, grille de notation)
+activate A
+A -> API: Envoie une requête pour créer la journée avec ses détails
+activate API
+API -> DB: Crée la nouvelle journée dans la base de données
+activate DB
+DB --> API: Confirme la création
+deactivate DB
+API --> A: Renvoie la confirmation de la création
+deactivate API
+A --> F: Confirme la création de la journée
+
+F -> A: Commence à ajouter une session à la journée (grille de notation si différente, critères, thèmes, attributs)
+activate A
+A -> API: Envoie une requête pour créer la session avec ses détails
+activate API
+API -> DB: Crée la session dans la base de données
+activate DB
+DB --> API: Confirme la création de la session
+deactivate DB
+API --> A: Renvoie la confirmation de la création
+deactivate API
+A --> F: Confirme la création de la session
+
+F -> A: Met à jour les informations de la session (évaluation, axe de progression)
+activate A
+A -> API: Envoie une requête pour mettre à jour les informations de la session
+activate API
+API -> DB: Met à jour les informations dans la base de données
+activate DB
+DB --> API: Confirme la mise à jour
+deactivate DB
+API --> A: Renvoie la confirmation de la mise à jour
+deactivate API
+A --> F: Confirme la mise à jour de la session
+deactivate A
+@enduml

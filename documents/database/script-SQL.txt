@@ -1,0 +1,179 @@
+CREATE TABLE roles(
+   role_id INT,
+   name VARCHAR(50) NOT NULL,
+   description TEXT NOT NULL,
+   PRIMARY KEY(role_id),
+   UNIQUE(name),
+   UNIQUE(description)
+);
+
+CREATE TABLE criteria(
+   criterion_id INT,
+   text TEXT NOT NULL,
+   PRIMARY KEY(criterion_id),
+   UNIQUE(text)
+);
+
+CREATE TABLE themes(
+   theme_id INT,
+   text TEXT NOT NULL,
+   evaluation BYTE,
+   progress TEXT,
+   PRIMARY KEY(theme_id),
+   UNIQUE(text)
+);
+
+CREATE TABLE companies(
+   company_id INT,
+   name VARCHAR(50) NOT NULL,
+   contact VARCHAR(50),
+   address VARCHAR(100),
+   zip_code VARCHAR(5),
+   town VARCHAR(35),
+   PRIMARY KEY(company_id)
+);
+
+CREATE TABLE offers(
+   offer_id INT,
+   name VARCHAR(50) NOT NULL,
+   price DECIMAL(3,2) NOT NULL,
+   description VARCHAR(50),
+   PRIMARY KEY(offer_id),
+   UNIQUE(name),
+   UNIQUE(price)
+);
+
+CREATE TABLE features(
+   feature_id INT,
+   text TEXT,
+   offer_id INT NOT NULL,
+   PRIMARY KEY(feature_id),
+   FOREIGN KEY(offer_id) REFERENCES offers(offer_id)
+);
+
+CREATE TABLE centers(
+   center_acp_id INT,
+   name_ VARCHAR(50),
+   address VARCHAR(100),
+   PRIMARY KEY(center_acp_id)
+);
+
+CREATE TABLE trainings(
+   training_id INT,
+   seance_code INT,
+   dateTime DATE,
+   offer_id INT NOT NULL,
+   center_acp_id INT,
+   PRIMARY KEY(training_id),
+   FOREIGN KEY(offer_id) REFERENCES offers(offer_id),
+   FOREIGN KEY(center_acp_id) REFERENCES centers(center_acp_id)
+);
+
+CREATE TABLE abilities(
+   id INT AUTO_INCREMENT,
+   name VARCHAR(25),
+   description VARCHAR(250),
+   role_id INT,
+   PRIMARY KEY(id),
+   FOREIGN KEY(role_id) REFERENCES roles(role_id)
+);
+
+CREATE TABLE grids(
+   grid_id INT,
+   name VARCHAR(50),
+   PRIMARY KEY(grid_id)
+);
+
+CREATE TABLE users(
+   user_id INT,
+   lastname VARCHAR(35) NOT NULL,
+   firstname VARCHAR(35) NOT NULL,
+   password VARCHAR(60),
+   email VARCHAR(50),
+   phone VARCHAR(10),
+   address VARCHAR(100),
+   zip_code CHAR(5),
+   town VARCHAR(35),
+   company_id INT NOT NULL,
+   role_id INT NOT NULL,
+   PRIMARY KEY(user_id),
+   UNIQUE(email),
+   UNIQUE(phone),
+   FOREIGN KEY(company_id) REFERENCES companies(company_id),
+   FOREIGN KEY(role_id) REFERENCES roles(role_id)
+);
+
+CREATE TABLE courses(
+   course_id INT,
+   observation TEXT,
+   grid_id INT,
+   training_id INT NOT NULL,
+   PRIMARY KEY(course_id),
+   FOREIGN KEY(grid_id) REFERENCES grids(grid_id),
+   FOREIGN KEY(training_id) REFERENCES trainings(training_id)
+);
+
+CREATE TABLE vehicles(
+   vehicle_id INT,
+   name VARCHAR(50) NOT NULL,
+   brand VARCHAR(50),
+   license_Plate VARCHAR(10),
+   type VARCHAR(20),
+   user_id_Learner INT NOT NULL,
+   PRIMARY KEY(vehicle_id),
+   FOREIGN KEY(user_id_Learner) REFERENCES users(user_id)
+);
+
+CREATE TABLE trainers(
+   user_id INT,
+   training_id INT,
+   PRIMARY KEY(user_id),
+   FOREIGN KEY(user_id) REFERENCES users(user_id),
+   FOREIGN KEY(training_id) REFERENCES trainings(training_id)
+);
+
+CREATE TABLE learners(
+   user_id_1 INT,
+   user_id INT,
+   PRIMARY KEY(user_id_1),
+   FOREIGN KEY(user_id_1) REFERENCES users(user_id),
+   FOREIGN KEY(user_id) REFERENCES trainers(user_id)
+);
+
+CREATE TABLE supervisors(
+   user_id INT,
+   PRIMARY KEY(user_id),
+   FOREIGN KEY(user_id) REFERENCES users(user_id)
+);
+
+CREATE TABLE training_learner(
+   user_id INT,
+   training_id INT,
+   PRIMARY KEY(user_id, training_id),
+   FOREIGN KEY(user_id) REFERENCES learners(user_id_1),
+   FOREIGN KEY(training_id) REFERENCES trainings(training_id)
+);
+
+CREATE TABLE grid_criterion(
+   criterion_id INT,
+   grid_id INT,
+   PRIMARY KEY(criterion_id, grid_id),
+   FOREIGN KEY(criterion_id) REFERENCES criteria(criterion_id),
+   FOREIGN KEY(grid_id) REFERENCES grids(grid_id)
+);
+
+CREATE TABLE criterion_theme(
+   criterion_id INT,
+   theme_id INT,
+   PRIMARY KEY(criterion_id, theme_id),
+   FOREIGN KEY(criterion_id) REFERENCES criteria(criterion_id),
+   FOREIGN KEY(theme_id) REFERENCES themes(theme_id)
+);
+
+CREATE TABLE trainer_company(
+   company_id INT,
+   user_id INT,
+   PRIMARY KEY(company_id, user_id),
+   FOREIGN KEY(company_id) REFERENCES companies(company_id),
+   FOREIGN KEY(user_id) REFERENCES trainers(user_id)
+);

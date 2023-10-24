@@ -1,0 +1,43 @@
+{
+    "private": true,
+    "scripts": {
+        "prod": "vite build --mode production",
+        "dev": "vite",
+        "build": "vite build",
+        "cypress:open": "cypress open"
+    },
+    "devDependencies": {
+        "@tailwindcss/forms": "^0.5.2",
+        "@types/jest": "^29.5.2",
+        "@types/leaflet": "^1.9.4",
+        "@vitejs/plugin-vue": "^4.0.0",
+        "autoprefixer": "^10.4.2",
+        "cypress": "^12.17.4",
+        "laravel-vite-plugin": "^0.7.2",
+        "lodash": "^4.17.19",
+        "postcss": "^8.4.6",
+        "tailwindcss": "^3.1.0",
+        "ts-loader": "^9.4.2",
+        "typescript": "^5.2.2",
+        "vite": "^4.0.0",
+        "vite-plugin-copy": "^0.1.6",
+        "vite-plugin-ssr": "^0.4.131"
+    },
+    "dependencies": {
+        "@date-io/date-fns": "^2.17.0",
+        "@mdi/font": "^7.2.96",
+        "@vue/compiler-sfc": "^3.2.45",
+        "@vueuse/core": "^9.10.0",
+        "axios": "^1.1.2",
+        "bootstrap": "^5.3.1",
+        "date-fns": "^2.30.0",
+        "http-status-codes": "^2.2.0",
+        "leaflet": "^1.9.4",
+        "pinia": "^2.1.6",
+        "store": "^2.0.12",
+        "vue": "^3.3.6",
+        "vue-loader": "^17.0.1",
+        "vue-router": "^4.2.5",
+        "vuetify": "^3.3.4"
+    }
+}

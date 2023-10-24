@@ -1,0 +1,17 @@
+openapi: 3.0.0
+info:
+  title: 'Laravel OpenApi Demo Documentation'
+  description: 'L5 Swagger OpenApi description'
+  contact:
+    email: admin@admin.com
+  license:
+    name: 'Apache 2.0'
+    url: 'https://www.apache.org/licenses/LICENSE-2.0.html'
+  version: 1.0.0
+paths:
+  /api/learner-store:
+    post:
+      operationId: 1a1be0935799d2bd979c81844c2faf66
+      responses:
+        '201':
+          description: 'The data'

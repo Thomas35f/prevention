@@ -1,0 +1,73 @@
+.single-slider{
+    background-image: url('../images/road.jpg');
+    background-position: bottom;
+    min-height: 460px;
+}
+.hero-cap{
+    margin-left: 150px;
+}
+
+.contact-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px
+}
+
+.form-contact .form-control {
+    border: 1px solid #a8a8a8;
+    border-radius: 3px;
+    height: 48px;
+    padding-left: 18px;
+    font-size: 13px;
+    background-color: #fafafa;
+}
+
+.form-contact .form-control:focus {
+    outline: 0;
+    box-shadow: none
+}
+
+.form-contact .form-control::placeholder {
+    font-weight: 400;
+    color: #2d2d2d
+}
+
+.button-contactForm {
+    background: #f15f22;
+    display: inline-block;
+    padding: 15px 30px;
+    font-family: "Barlow", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    border: 0;
+    border: 1px solid #E0581E;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white!important;
+    text-transform: uppercase;
+    cursor: pointer;
+    float: right;
+}
+.button-contactForm:hover{
+    background-color: #ea4c00;
+    color: white;
+    transform: scale(1.02);
+}
+
+.map-container {
+    position: sticky;
+}
+
+#map {
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.contact-title {
+    margin-top: 50px;
+}
+.offset-lg-1{
+    margin-top: -50px;
+}

@@ -1,0 +1,11 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" title=" " alt="" coords="5,242,93,269"/>
+<area shape="rect" id="node2" href="$db/dfa/class_app_1_1_http_1_1_middleware_1_1_authenticate.html" title=" " alt="" coords="189,5,333,47"/>
+<area shape="rect" id="node3" href="$dd/de6/class_app_1_1_http_1_1_middleware_1_1_encrypt_cookies.html" title=" " alt="" coords="189,71,333,112"/>
+<area shape="rect" id="node4" href="$d4/dd4/class_app_1_1_http_1_1_middleware_1_1_prevent_requests_during_maintenance.html" title=" " alt="" coords="141,136,380,177"/>
+<area shape="rect" id="node5" href="$dd/dfd/class_app_1_1_http_1_1_middleware_1_1_trim_strings.html" title=" " alt="" coords="189,201,333,243"/>
+<area shape="rect" id="node6" href="$d3/da4/class_app_1_1_http_1_1_middleware_1_1_trust_hosts.html" title=" " alt="" coords="189,267,333,308"/>
+<area shape="rect" id="node7" href="$d2/d53/class_app_1_1_http_1_1_middleware_1_1_trust_proxies.html" title=" " alt="" coords="189,332,333,373"/>
+<area shape="rect" id="node8" href="$dc/df9/class_app_1_1_http_1_1_middleware_1_1_validate_signature.html" title=" " alt="" coords="189,397,333,439"/>
+<area shape="rect" id="node9" href="$d0/d12/class_app_1_1_http_1_1_middleware_1_1_verify_csrf_token.html" title=" " alt="" coords="189,463,333,504"/>
+</map>
