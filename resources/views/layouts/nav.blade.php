@@ -1,5 +1,5 @@
 @vite(['resources/css/nav.css'])
-@vite(['resources/js/nav.ts'])
+{{-- @vite(['resources/js/nav.ts']) --}}
 
 <header>
     <!-- Header Start -->
@@ -16,9 +16,9 @@
                                         <img src="{{ asset('images/nav/lery-logo-web.png') }}" alt="">
                                     </div>
                                     <div class="logo-text">
-                                        <span class="lery">{{__('nav.lery') }}</span>
-                                        <br/>
-                                        <span class="technologies">{{__('nav.technologies') }}</span>
+                                        <span class="lery">{{ __('nav.lery') }}</span>
+                                        <br />
+                                        <span class="technologies">{{ __('nav.technologies') }}</span>
                                     </div>
                                 </div>
                             </a>
@@ -39,7 +39,7 @@
 
                                             @if (Auth::check())
                                                 <li><a href="{{ route('dashboard') }}"
-                                                       class="{{ request()->routeIs('dashboard') ? 'active' : '' }}">{{ __('nav.dashboard') }}</a>
+                                                        class="{{ request()->routeIs('dashboard') ? 'active' : '' }}">{{ __('nav.dashboard') }}</a>
                                                 </li>
                                             @endif
                                             <li><a href="{{ route('contact') }}">{{ __('nav.contact') }}</a></li>
@@ -50,20 +50,22 @@
                                                 </a>
                                                 <ul class="submenu">
                                                     @if (Auth::check())
-                                                        <li><a href="{{ route('profile.edit') }}">{{ __('nav.profile') }}</a>
+                                                        <li><a
+                                                                href="{{ route('profile.edit') }}">{{ __('nav.profile') }}</a>
                                                         </li>
 
                                                         <li><a href="{{ route('logout') }}"
-                                                               onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('nav.disconnect') }}</a>
+                                                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('nav.disconnect') }}</a>
                                                         </li>
                                                         <form id="logout-form" method="POST"
-                                                              action="{{ route('logout') }}" style="display: none;">
+                                                            action="{{ route('logout') }}" style="display: none;">
                                                             @csrf
                                                         </form>
                                                     @else
                                                         <li><a href="{{ route('login') }}">{{ __('nav.login') }}</a>
                                                         </li>
-                                                        <li><a href="{{ route('register') }}">{{ __('nav.register') }}</a>
+                                                        <li><a
+                                                                href="{{ route('register') }}">{{ __('nav.register') }}</a>
                                                         </li>
                                                     @endif
 
@@ -75,10 +77,11 @@
                                 <!-- Header-btn -->
                                 <div class="header-right-btn d-none d-lg-block">
                                     @if (Auth::check())
-                                        <a href="{{ route('dashboard') }}" class="btn header-btn">{{__('nav.create_session') }}</a>
+                                        <a href="{{ route('dashboard') }}"
+                                            class="btn header-btn">{{ __('nav.create_session') }}</a>
                                     @else
                                         <a href="{{ route('register') }}"
-                                           class="btn header-btn">{{ __('nav.register') }}</a>
+                                            class="btn header-btn">{{ __('nav.register') }}</a>
                                     @endif
                                 </div>
                             </div>
@@ -91,7 +94,7 @@
 
                                 @if (Auth::check())
                                     <li><a href="{{ route('dashboard') }}"
-                                           class="{{ request()->routeIs('dashboard') ? 'active' : '' }}">{{ __('nav.dashboard') }}</a>
+                                            class="{{ request()->routeIs('dashboard') ? 'active' : '' }}">{{ __('nav.dashboard') }}</a>
                                     </li>
                                 @endif
                                 <li><a href="{{ route('contact') }}">{{ __('nav.contact') }}</a></li>
@@ -102,10 +105,10 @@
                                             </li>
 
                                             <li><a href="{{ route('logout') }}"
-                                                   onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('nav.disconnect') }}</a>
+                                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">{{ __('nav.disconnect') }}</a>
                                             </li>
-                                            <form id="logout-form" method="POST"
-                                                  action="{{ route('logout') }}" style="display: none;">
+                                            <form id="logout-form" method="POST" action="{{ route('logout') }}"
+                                                style="display: none;">
                                                 @csrf
                                             </form>
                                         @else

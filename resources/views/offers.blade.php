@@ -3,7 +3,7 @@
 @section('title', 'offers')
 
 @section('header')
-    @vite(['resources/css/offers.css','resources/js/offers.ts'])
+    @vite(['resources/css/offers.css', 'resources/js/offers.ts'])
 @endsection
 
 @section('content')
@@ -12,18 +12,18 @@
         <div class="box-center">
             <div class="title-offers">
                 <h1 class="h1-offers">
-                    {{__('offers.title') }}
+                    {{ __('offers.title') }}
                 </h1>
             </div>
             <div class="gallery-nav">
                 <button>
-                    <span>{{$offers[0]->name}}</span>
+                    <span>{{ $offers[0]->name }}</span>
                 </button>
                 <button class="is-selected">
-                    <span>{{$offers[1]->name}}</span>
+                    <span>{{ $offers[1]->name }}</span>
                 </button>
                 <button>
-                    <span>{{$offers[2]->name}}</span>
+                    <span>{{ $offers[2]->name }}</span>
                 </button>
             </div>
             <section class="section-pricing">
@@ -31,41 +31,41 @@
                     <div class="column-first-offer" id="column-first-offer">
                         <div class="content-first-offer" id="first-offer">
                             <h2 class="h2-first-order">
-                                {{$offers[0]->name}}
+                                {{ $offers[0]->name }}
                             </h2>
                             <p class="description-first-offer">
-                                {{$offers[0]->description}}
+                                {{ $offers[0]->description }}
                             </p>
                             <div class="price-detail-first-offer">
                                 <div class="price-container-first-offer">
-                               <span class="span-price-first-offer">
-                                   {{$offers[0]->price}}
-                               </span>
+                                    <span class="span-price-first-offer">
+                                        {{ $offers[0]->price }}
+                                    </span>
                                     <span class="span-sign-first-offer">
-                                   {{__('offers.euro_sign') }}
-                               </span>
+                                        {{ __('offers.euro_sign') }}
+                                    </span>
                                 </div>
                                 <div class="price-description-first-offer">
-                                    <p class="p-price-description-first-offer">{{__('offers.learner') }}</p>
+                                    <p class="p-price-description-first-offer">{{ __('offers.learner') }}</p>
                                     <p class="p-price-other-information-first-offer">
 
                                     </p>
                                 </div>
                             </div>
                             <div class="div-button-first-offer">
-                                <button class="button-first-offer" type="button">{{__('offers.access_offer') }}</button>
+                                <button class="button-first-offer" type="button">{{ __('offers.access_offer') }}</button>
                             </div>
                         </div>
                         <div class="features-content-first-offer">
                             <div class="title-features-first-offer">
                                 <h2 class="h2-title-features-first-offer">
-                                    {{__('offers.features') }}
+                                    {{ __('offers.features') }}
                                 </h2>
                             </div>
                             <div class="list-features-first-offer">
                                 <ul>
-                                    @foreach($offers[0]->features as $feature)
-                                        <li> {{$feature->text}}</li>
+                                    @foreach ($offers[0]->features as $feature)
+                                        <li> {{ $feature->text }}</li>
                                     @endforeach
                                 </ul>
                             </div>
@@ -74,42 +74,41 @@
                     <div class="column-second-offer" id="column-second-offer">
                         <div class="content-second-offer" id="second-offer">
                             <h2 class="h2-second-order">
-                                {{$offers[1]->name}}
+                                {{ $offers[1]->name }}
                             </h2>
                             <p class="description-second-offer">
-                                {{$offers[1]->description}}
+                                {{ $offers[1]->description }}
                             </p>
                             <div class="price-detail-second-offer">
                                 <div class="price-container-second-offer">
-                               <span class="span-price-second-offer">
-                                   {{$offers[1]->price}}
-                               </span>
+                                    <span class="span-price-second-offer">
+                                        {{ $offers[1]->price }}
+                                    </span>
                                     <span class="span-sign-second-offer">
-                                   {{__('offers.euro_sign') }}
-                               </span>
+                                        {{ __('offers.euro_sign') }}
+                                    </span>
                                 </div>
                                 <div class="price-description-second-offer">
-                                    <p class="p-price-description-second-offer">{{__('offers.learner') }}</p>
+                                    <p class="p-price-description-second-offer">{{ __('offers.learner') }}</p>
                                     <p class="p-price-other-information-second-offer">
 
                                     </p>
                                 </div>
                             </div>
                             <div class="div-button-second-offer">
-                                <button class="button-second-offer"
-                                        type="button">{{__('offers.access_offer') }}</button>
+                                <button class="button-second-offer" type="button">{{ __('offers.access_offer') }}</button>
                             </div>
                         </div>
                         <div class="features-content-second-offer">
                             <div class="title-features-second-offer">
                                 <h2 class="h2-title-features-second-offer">
-                                    {{__('offers.features') }}
+                                    {{ __('offers.features') }}
                                 </h2>
                             </div>
                             <div class="list-features-second-offer">
                                 <ul>
-                                    @foreach($offers[1]->features as $feature)
-                                        <li> {{$feature->text}}</li>
+                                    @foreach ($offers[1]->features as $feature)
+                                        <li> {{ $feature->text }}</li>
                                     @endforeach
                                 </ul>
                             </div>
@@ -118,41 +117,41 @@
                     <div class="column-third-offer" id="column-third-offer">
                         <div class="content-third-offer" id="third-offer">
                             <h2 class="h2-third-order">
-                                {{$offers[2]->name}}
+                                {{ $offers[2]->name }}
                             </h2>
                             <p class="description-third-offer">
-                                {{$offers[2]->description}}
+                                {{ $offers[2]->description }}
                             </p>
                             <div class="price-detail-third-offer">
                                 <div class="price-container-third-offer">
-                               <span class="span-price-third-offer">
-                                {{$offers[2]->price}}
-                               </span>
+                                    <span class="span-price-third-offer">
+                                        {{ $offers[2]->price }}
+                                    </span>
                                     <span class="span-sign-third-offer">
-                                   {{__('offers.euro_sign') }}
-                               </span>
+                                        {{ __('offers.euro_sign') }}
+                                    </span>
                                 </div>
                                 <div class="price-description-third-offer">
-                                    <p class="p-price-description-third-offer">{{__('offers.learner') }}</p>
+                                    <p class="p-price-description-third-offer">{{ __('offers.learner') }}</p>
                                     <p class="p-price-other-information-third-offer">
 
                                     </p>
                                 </div>
                             </div>
                             <div class="div-button-third-offer">
-                                <button class="button-third-offer" type="button">{{__('offers.access_offer') }}</button>
+                                <button class="button-third-offer" type="button">{{ __('offers.access_offer') }}</button>
                             </div>
                         </div>
                         <div class="features-content-third-offer">
                             <div class="title-features-third-offer">
                                 <h2 class="h2-title-features-third-offer">
-                                    {{__('offers.features') }}
+                                    {{ __('offers.features') }}
                                 </h2>
                             </div>
                             <div class="list-features-third-offer">
                                 <ul>
-                                    @foreach($offers[2]->features as $feature)
-                                        <li> {{$feature->text}}</li>
+                                    @foreach ($offers[2]->features as $feature)
+                                        <li> {{ $feature->text }}</li>
                                     @endforeach
                                 </ul>
                             </div>
@@ -165,11 +164,11 @@
 
     <script>
         /*!
- * Flickity  v2.3.0
- */
-        (function (e, i) {
+         * Flickity  v2.3.0
+         */
+        (function(e, i) {
             if (typeof define == "function" && define.amd) {
-                define("jquery-bridget/jquery-bridget", ["jquery"], function (t) {
+                define("jquery-bridget/jquery-bridget", ["jquery"], function(t) {
                     return i(e, t)
                 })
             } else if (typeof module == "object" && module.exports) {
@@ -181,8 +180,7 @@
             "use strict";
             var o = Array.prototype.slice;
             var i = e.console;
-            var u = typeof i == "undefined" ? function () {
-            } : function (t) {
+            var u = typeof i == "undefined" ? function() {} : function(t) {
                 i.error(t)
             };
 
@@ -192,14 +190,14 @@
                     return
                 }
                 if (!s.prototype.option) {
-                    s.prototype.option = function (t) {
+                    s.prototype.option = function(t) {
                         if (!c.isPlainObject(t)) {
                             return
                         }
                         this.options = c.extend(true, this.options, t)
                     }
                 }
-                c.fn[h] = function (t) {
+                c.fn[h] = function(t) {
                     if (typeof t == "string") {
                         var e = o.call(arguments, 1);
                         return i(this, t, e)
@@ -211,7 +209,7 @@
                 function i(t, r, o) {
                     var a;
                     var l = "$()." + h + '("' + r + '")';
-                    t.each(function (t, e) {
+                    t.each(function(t, e) {
                         var i = c.data(e, h);
                         if (!i) {
                             u(h + " not initialized. Cannot call methods, i.e. " + l);
@@ -229,7 +227,7 @@
                 }
 
                 function n(t, n) {
-                    t.each(function (t, e) {
+                    t.each(function(t, e) {
                         var i = c.data(e, h);
                         if (i) {
                             i.option(n);
@@ -254,7 +252,7 @@
             a(r || e.jQuery);
             return n
         });
-        (function (t, e) {
+        (function(t, e) {
             if (typeof define == "function" && define.amd) {
                 define("ev-emitter/ev-emitter", e)
             } else if (typeof module == "object" && module.exports) {
@@ -262,12 +260,11 @@
             } else {
                 t.EvEmitter = e()
             }
-        })(typeof window != "undefined" ? window : this, function () {
-            function t() {
-            }
+        })(typeof window != "undefined" ? window : this, function() {
+            function t() {}
 
             var e = t.prototype;
-            e.on = function (t, e) {
+            e.on = function(t, e) {
                 if (!t || !e) {
                     return
                 }
@@ -278,7 +275,7 @@
                 }
                 return this
             };
-            e.once = function (t, e) {
+            e.once = function(t, e) {
                 if (!t || !e) {
                     return
                 }
@@ -288,7 +285,7 @@
                 n[e] = true;
                 return this
             };
-            e.off = function (t, e) {
+            e.off = function(t, e) {
                 var i = this._events && this._events[t];
                 if (!i || !i.length) {
                     return
@@ -299,7 +296,7 @@
                 }
                 return this
             };
-            e.emitEvent = function (t, e) {
+            e.emitEvent = function(t, e) {
                 var i = this._events && this._events[t];
                 if (!i || !i.length) {
                     return
@@ -318,14 +315,14 @@
                 }
                 return this
             };
-            e.allOff = function () {
+            e.allOff = function() {
                 delete this._events;
                 delete this._onceEvents
             };
             return t
         });
 
-        (function (t, e) {
+        (function(t, e) {
             if (typeof define == "function" && define.amd) {
                 define("get-size/get-size", e)
             } else if (typeof module == "object" && module.exports) {
@@ -342,17 +339,26 @@
                 return i && e
             }
 
-            function e() {
-            }
+            function e() {}
 
-            var i = typeof console == "undefined" ? e : function (t) {
+            var i = typeof console == "undefined" ? e : function(t) {
                 console.error(t)
             };
-            var y = ["paddingLeft", "paddingRight", "paddingTop", "paddingBottom", "marginLeft", "marginRight", "marginTop", "marginBottom", "borderLeftWidth", "borderRightWidth", "borderTopWidth", "borderBottomWidth"];
+            var y = ["paddingLeft", "paddingRight", "paddingTop", "paddingBottom", "marginLeft", "marginRight",
+                "marginTop", "marginBottom", "borderLeftWidth", "borderRightWidth", "borderTopWidth",
+                "borderBottomWidth"
+            ];
             var b = y.length;
 
             function E() {
-                var t = {width: 0, height: 0, innerWidth: 0, innerHeight: 0, outerWidth: 0, outerHeight: 0};
+                var t = {
+                    width: 0,
+                    height: 0,
+                    innerWidth: 0,
+                    innerHeight: 0,
+                    outerWidth: 0,
+                    outerHeight: 0
+                };
                 for (var e = 0; e < b; e++) {
                     var i = y[e];
                     t[i] = 0
@@ -363,7 +369,8 @@
             function S(t) {
                 var e = getComputedStyle(t);
                 if (!e) {
-                    i("Style returned " + e + ". Are you running this code in a hidden iframe on Firefox? " + "See https://bit.ly/getsizebug1")
+                    i("Style returned " + e + ". Are you running this code in a hidden iframe on Firefox? " +
+                        "See https://bit.ly/getsizebug1")
                 }
                 return e
             }
@@ -436,7 +443,7 @@
 
             return s
         });
-        (function (t, e) {
+        (function(t, e) {
             "use strict";
             if (typeof define == "function" && define.amd) {
                 define("desandro-matches-selector/matches-selector", e)
@@ -447,7 +454,7 @@
             }
         })(window, function t() {
             "use strict";
-            var n = function () {
+            var n = function() {
                 var t = window.Element.prototype;
                 if (t.matches) {
                     return "matches"
@@ -468,9 +475,9 @@
                 return e[n](i)
             }
         });
-        (function (e, i) {
+        (function(e, i) {
             if (typeof define == "function" && define.amd) {
-                define("fizzy-ui-utils/utils", ["desandro-matches-selector/matches-selector"], function (t) {
+                define("fizzy-ui-utils/utils", ["desandro-matches-selector/matches-selector"], function(t) {
                     return i(e, t)
                 })
             } else if (typeof module == "object" && module.exports) {
@@ -480,17 +487,17 @@
             }
         })(window, function t(h, r) {
             var c = {};
-            c.extend = function (t, e) {
+            c.extend = function(t, e) {
                 for (var i in e) {
                     t[i] = e[i]
                 }
                 return t
             };
-            c.modulo = function (t, e) {
+            c.modulo = function(t, e) {
                 return (t % e + e) % e
             };
             var i = Array.prototype.slice;
-            c.makeArray = function (t) {
+            c.makeArray = function(t) {
                 if (Array.isArray(t)) {
                     return t
                 }
@@ -503,13 +510,13 @@
                 }
                 return [t]
             };
-            c.removeFrom = function (t, e) {
+            c.removeFrom = function(t, e) {
                 var i = t.indexOf(e);
                 if (i != -1) {
                     t.splice(i, 1)
                 }
             };
-            c.getParent = function (t, e) {
+            c.getParent = function(t, e) {
                 while (t.parentNode && t != document.body) {
                     t = t.parentNode;
                     if (r(t, e)) {
@@ -517,22 +524,22 @@
                     }
                 }
             };
-            c.getQueryElement = function (t) {
+            c.getQueryElement = function(t) {
                 if (typeof t == "string") {
                     return document.querySelector(t)
                 }
                 return t
             };
-            c.handleEvent = function (t) {
+            c.handleEvent = function(t) {
                 var e = "on" + t.type;
                 if (this[e]) {
                     this[e](t)
                 }
             };
-            c.filterFindElements = function (t, n) {
+            c.filterFindElements = function(t, n) {
                 t = c.makeArray(t);
                 var s = [];
-                t.forEach(function (t) {
+                t.forEach(function(t) {
                     if (!(t instanceof HTMLElement)) {
                         return
                     }
@@ -550,22 +557,22 @@
                 });
                 return s
             };
-            c.debounceMethod = function (t, e, n) {
+            c.debounceMethod = function(t, e, n) {
                 n = n || 100;
                 var s = t.prototype[e];
                 var r = e + "Timeout";
-                t.prototype[e] = function () {
+                t.prototype[e] = function() {
                     var t = this[r];
                     clearTimeout(t);
                     var e = arguments;
                     var i = this;
-                    this[r] = setTimeout(function () {
+                    this[r] = setTimeout(function() {
                         s.apply(i, e);
                         delete i[r]
                     }, n)
                 }
             };
-            c.docReady = function (t) {
+            c.docReady = function(t) {
                 var e = document.readyState;
                 if (e == "complete" || e == "interactive") {
                     setTimeout(t)
@@ -573,14 +580,14 @@
                     document.addEventListener("DOMContentLoaded", t)
                 }
             };
-            c.toDashed = function (t) {
-                return t.replace(/(.)([A-Z])/g, function (t, e, i) {
+            c.toDashed = function(t) {
+                return t.replace(/(.)([A-Z])/g, function(t, e, i) {
                     return e + "-" + i
                 }).toLowerCase()
             };
             var u = h.console;
-            c.htmlInit = function (a, l) {
-                c.docReady(function () {
+            c.htmlInit = function(a, l) {
+                c.docReady(function() {
                     var t = c.toDashed(l);
                     var s = "data-" + t;
                     var e = document.querySelectorAll("[" + s + "]");
@@ -588,7 +595,7 @@
                     var n = c.makeArray(e).concat(c.makeArray(i));
                     var r = s + "-options";
                     var o = h.jQuery;
-                    n.forEach(function (e) {
+                    n.forEach(function(e) {
                         var t = e.getAttribute(s) || e.getAttribute(r);
                         var i;
                         try {
@@ -608,9 +615,9 @@
             };
             return c
         });
-        (function (e, i) {
+        (function(e, i) {
             if (typeof define == "function" && define.amd) {
-                define("flickity/js/cell", ["get-size/get-size"], function (t) {
+                define("flickity/js/cell", ["get-size/get-size"], function(t) {
                     return i(e, t)
                 })
             } else if (typeof module == "object" && module.exports) {
@@ -627,14 +634,14 @@
             }
 
             var s = n.prototype;
-            s.create = function () {
+            s.create = function() {
                 this.element.style.position = "absolute";
                 this.element.setAttribute("aria-hidden", "true");
                 this.x = 0;
                 this.shift = 0;
                 this.element.style[this.parent.originSide] = 0
             };
-            s.destroy = function () {
+            s.destroy = function() {
                 this.unselect();
                 this.element.style.position = "";
                 var t = this.parent.originSide;
@@ -642,41 +649,42 @@
                 this.element.style.transform = "";
                 this.element.removeAttribute("aria-hidden")
             };
-            s.getSize = function () {
+            s.getSize = function() {
                 this.size = i(this.element)
             };
-            s.setPosition = function (t) {
+            s.setPosition = function(t) {
                 this.x = t;
                 this.updateTarget();
                 this.renderPosition(t)
             };
-            s.updateTarget = s.setDefaultTarget = function () {
+            s.updateTarget = s.setDefaultTarget = function() {
                 var t = this.parent.originSide == "left" ? "marginLeft" : "marginRight";
                 this.target = this.x + this.size[t] + this.size.width * this.parent.cellAlign
             };
-            s.renderPosition = function (t) {
+            s.renderPosition = function(t) {
                 var e = this.parent.originSide === "left" ? 1 : -1;
-                var i = this.parent.options.percentPosition ? t * e * (this.parent.size.innerWidth / this.size.width) : t * e;
+                var i = this.parent.options.percentPosition ? t * e * (this.parent.size.innerWidth / this.size
+                    .width) : t * e;
                 this.element.style.transform = "translateX(" + this.parent.getPositionValue(i) + ")"
             };
-            s.select = function () {
+            s.select = function() {
                 this.element.classList.add("is-selected");
                 this.element.removeAttribute("aria-hidden")
             };
-            s.unselect = function () {
+            s.unselect = function() {
                 this.element.classList.remove("is-selected");
                 this.element.setAttribute("aria-hidden", "true")
             };
-            s.wrapShift = function (t) {
+            s.wrapShift = function(t) {
                 this.shift = t;
                 this.renderPosition(this.x + this.parent.slideableWidth * t)
             };
-            s.remove = function () {
+            s.remove = function() {
                 this.element.parentNode.removeChild(this.element)
             };
             return n
         });
-        (function (t, e) {
+        (function(t, e) {
             if (typeof define == "function" && define.amd) {
                 define("flickity/js/slide", e)
             } else if (typeof module == "object" && module.exports) {
@@ -697,7 +705,7 @@
             }
 
             var i = e.prototype;
-            i.addCell = function (t) {
+            i.addCell = function(t) {
                 this.cells.push(t);
                 this.outerWidth += t.size.outerWidth;
                 this.height = Math.max(t.size.outerHeight, this.height);
@@ -707,36 +715,36 @@
                     this.firstMargin = t.size[e]
                 }
             };
-            i.updateTarget = function () {
+            i.updateTarget = function() {
                 var t = this.isOriginLeft ? "marginRight" : "marginLeft";
                 var e = this.getLastCell();
                 var i = e ? e.size[t] : 0;
                 var n = this.outerWidth - (this.firstMargin + i);
                 this.target = this.x + this.firstMargin + n * this.parent.cellAlign
             };
-            i.getLastCell = function () {
+            i.getLastCell = function() {
                 return this.cells[this.cells.length - 1]
             };
-            i.select = function () {
-                this.cells.forEach(function (t) {
+            i.select = function() {
+                this.cells.forEach(function(t) {
                     t.select()
                 })
             };
-            i.unselect = function () {
-                this.cells.forEach(function (t) {
+            i.unselect = function() {
+                this.cells.forEach(function(t) {
                     t.unselect()
                 })
             };
-            i.getCellElements = function () {
-                return this.cells.map(function (t) {
+            i.getCellElements = function() {
+                return this.cells.map(function(t) {
                     return t.element
                 })
             };
             return e
         });
-        (function (e, i) {
+        (function(e, i) {
             if (typeof define == "function" && define.amd) {
-                define("flickity/js/animate", ["fizzy-ui-utils/utils"], function (t) {
+                define("flickity/js/animate", ["fizzy-ui-utils/utils"], function(t) {
                     return i(e, t)
                 })
             } else if (typeof module == "object" && module.exports) {
@@ -747,7 +755,7 @@
             }
         })(window, function t(e, i) {
             var n = {};
-            n.startAnimation = function () {
+            n.startAnimation = function() {
                 if (this.isAnimating) {
                     return
                 }
@@ -755,7 +763,7 @@
                 this.restingFrames = 0;
                 this.animate()
             };
-            n.animate = function () {
+            n.animate = function() {
                 this.applyDragForce();
                 this.applySelectedAttraction();
                 var t = this.x;
@@ -769,7 +777,7 @@
                     })
                 }
             };
-            n.positionSlider = function () {
+            n.positionSlider = function() {
                 var t = this.x;
                 if (this.options.wrapAround && this.cells.length > 1) {
                     t = i.modulo(t, this.slideableWidth);
@@ -779,13 +787,13 @@
                 this.setTranslateX(t, this.isAnimating);
                 this.dispatchScrollEvent()
             };
-            n.setTranslateX = function (t, e) {
+            n.setTranslateX = function(t, e) {
                 t += this.cursorPosition;
                 t = this.options.rightToLeft ? -t : t;
                 var i = this.getPositionValue(t);
                 this.slider.style.transform = e ? "translate3d(" + i + ",0,0)" : "translateX(" + i + ")"
             };
-            n.dispatchScrollEvent = function () {
+            n.dispatchScrollEvent = function() {
                 var t = this.slides[0];
                 if (!t) {
                     return
@@ -794,7 +802,7 @@
                 var i = e / this.slidesWidth;
                 this.dispatchEvent("scroll", null, [i, e])
             };
-            n.positionSliderAtSelected = function () {
+            n.positionSliderAtSelected = function() {
                 if (!this.cells.length) {
                     return
                 }
@@ -802,14 +810,14 @@
                 this.velocity = 0;
                 this.positionSlider()
             };
-            n.getPositionValue = function (t) {
+            n.getPositionValue = function(t) {
                 if (this.options.percentPosition) {
                     return Math.round(t / this.size.innerWidth * 1e4) * .01 + "%"
                 } else {
                     return Math.round(t) + "px"
                 }
             };
-            n.settle = function (t) {
+            n.settle = function(t) {
                 var e = !this.isPointerDown && Math.round(this.x * 100) == Math.round(t * 100);
                 if (e) {
                     this.restingFrames++
@@ -821,13 +829,13 @@
                     this.dispatchEvent("settle", null, [this.selectedIndex])
                 }
             };
-            n.shiftWrapCells = function (t) {
+            n.shiftWrapCells = function(t) {
                 var e = this.cursorPosition + t;
                 this._shiftCells(this.beforeShiftCells, e, -1);
                 var i = this.size.innerWidth - (t + this.slideableWidth + this.cursorPosition);
                 this._shiftCells(this.afterShiftCells, i, 1)
             };
-            n._shiftCells = function (t, e, i) {
+            n._shiftCells = function(t, e, i) {
                 for (var n = 0; n < t.length; n++) {
                     var s = t[n];
                     var r = e > 0 ? i : 0;
@@ -835,7 +843,7 @@
                     e -= s.size.outerWidth
                 }
             };
-            n._unshiftCells = function (t) {
+            n._unshiftCells = function(t) {
                 if (!t || !t.length) {
                     return
                 }
@@ -843,20 +851,20 @@
                     t[e].wrapShift(0)
                 }
             };
-            n.integratePhysics = function () {
+            n.integratePhysics = function() {
                 this.x += this.velocity;
                 this.velocity *= this.getFrictionFactor()
             };
-            n.applyForce = function (t) {
+            n.applyForce = function(t) {
                 this.velocity += t
             };
-            n.getFrictionFactor = function () {
+            n.getFrictionFactor = function() {
                 return 1 - this.options[this.isFreeScrolling ? "freeScrollFriction" : "friction"]
             };
-            n.getRestingPosition = function () {
+            n.getRestingPosition = function() {
                 return this.x + this.velocity / (1 - this.getFrictionFactor())
             };
-            n.applyDragForce = function () {
+            n.applyDragForce = function() {
                 if (!this.isDraggable || !this.isPointerDown) {
                     return
                 }
@@ -864,7 +872,7 @@
                 var e = t - this.velocity;
                 this.applyForce(e)
             };
-            n.applySelectedAttraction = function () {
+            n.applySelectedAttraction = function() {
                 var t = this.isDraggable && this.isPointerDown;
                 if (t || this.isFreeScrolling || !this.slides.length) {
                     return
@@ -875,13 +883,16 @@
             };
             return n
         });
-        (function (o, a) {
+        (function(o, a) {
             if (typeof define == "function" && define.amd) {
-                define("flickity/js/flickity", ["ev-emitter/ev-emitter", "get-size/get-size", "fizzy-ui-utils/utils", "./cell", "./slide", "./animate"], function (t, e, i, n, s, r) {
+                define("flickity/js/flickity", ["ev-emitter/ev-emitter", "get-size/get-size", "fizzy-ui-utils/utils",
+                    "./cell", "./slide", "./animate"
+                ], function(t, e, i, n, s, r) {
                     return a(o, t, e, i, n, s, r)
                 })
             } else if (typeof module == "object" && module.exports) {
-                module.exports = a(o, require("ev-emitter"), require("get-size"), require("fizzy-ui-utils"), require("./cell"), require("./slide"), require("./animate"))
+                module.exports = a(o, require("ev-emitter"), require("get-size"), require("fizzy-ui-utils"), require(
+                    "./cell"), require("./slide"), require("./animate"))
             } else {
                 var t = o.Flickity;
                 o.Flickity = a(o, o.EvEmitter, o.getSize, o.fizzyUIUtils, t.Cell, t.Slide, t.animatePrototype)
@@ -937,7 +948,7 @@
             p.createMethods = [];
             var v = p.prototype;
             a.extend(v, e.prototype);
-            v._create = function () {
+            v._create = function() {
                 var t = this.guid = ++d;
                 this.element.flickityGUID = t;
                 f[t] = this;
@@ -956,7 +967,7 @@
                     var i = this.options.on[e];
                     this.on(e, i)
                 }
-                p.createMethods.forEach(function (t) {
+                p.createMethods.forEach(function(t) {
                     this[t]()
                 }, this);
                 if (this.options.watchCSS) {
@@ -965,10 +976,10 @@
                     this.activate()
                 }
             };
-            v.option = function (t) {
+            v.option = function(t) {
                 a.extend(this.options, t)
             };
-            v.activate = function () {
+            v.activate = function() {
                 if (this.isActive) {
                     return
                 }
@@ -992,39 +1003,39 @@
                 this.isInitActivated = true;
                 this.dispatchEvent("ready")
             };
-            v._createSlider = function () {
+            v._createSlider = function() {
                 var t = document.createElement("div");
                 t.className = "flickity-slider";
                 t.style[this.originSide] = 0;
                 this.slider = t
             };
-            v._filterFindCellElements = function (t) {
+            v._filterFindCellElements = function(t) {
                 return a.filterFindElements(t, this.options.cellSelector)
             };
-            v.reloadCells = function () {
+            v.reloadCells = function() {
                 this.cells = this._makeCells(this.slider.children);
                 this.positionCells();
                 this._getWrapShiftCells();
                 this.setGallerySize()
             };
-            v._makeCells = function (t) {
+            v._makeCells = function(t) {
                 var e = this._filterFindCellElements(t);
-                var i = e.map(function (t) {
+                var i = e.map(function(t) {
                     return new s(t, this)
                 }, this);
                 return i
             };
-            v.getLastCell = function () {
+            v.getLastCell = function() {
                 return this.cells[this.cells.length - 1]
             };
-            v.getLastSlide = function () {
+            v.getLastSlide = function() {
                 return this.slides[this.slides.length - 1]
             };
-            v.positionCells = function () {
+            v.positionCells = function() {
                 this._sizeCells(this.cells);
                 this._positionCells(0)
             };
-            v._positionCells = function (t) {
+            v._positionCells = function(t) {
                 t = t || 0;
                 this.maxCellHeight = t ? this.maxCellHeight || 0 : 0;
                 var e = 0;
@@ -1044,12 +1055,12 @@
                 this._containSlides();
                 this.slidesWidth = n ? this.getLastSlide().target - this.slides[0].target : 0
             };
-            v._sizeCells = function (t) {
-                t.forEach(function (t) {
+            v._sizeCells = function(t) {
+                t.forEach(function(t) {
                     t.getSize()
                 })
             };
-            v.updateSlides = function () {
+            v.updateSlides = function() {
                 this.slides = [];
                 if (!this.cells.length) {
                     return
@@ -1059,7 +1070,7 @@
                 var t = this.originSide == "left";
                 var s = t ? "marginRight" : "marginLeft";
                 var r = this._getCanCellFit();
-                this.cells.forEach(function (t, e) {
+                this.cells.forEach(function(t, e) {
                     if (!n.cells.length) {
                         n.addCell(t);
                         return
@@ -1077,45 +1088,59 @@
                 n.updateTarget();
                 this.updateSelectedSlide()
             };
-            v._getCanCellFit = function () {
+            v._getCanCellFit = function() {
                 var t = this.options.groupCells;
                 if (!t) {
-                    return function () {
+                    return function() {
                         return false
                     }
                 } else if (typeof t == "number") {
                     var e = parseInt(t, 10);
-                    return function (t) {
+                    return function(t) {
                         return t % e !== 0
                     }
                 }
                 var i = typeof t == "string" && t.match(/^(\d+)%$/);
                 var n = i ? parseInt(i[1], 10) / 100 : 1;
-                return function (t, e) {
+                return function(t, e) {
                     return e <= (this.size.innerWidth + 1) * n
                 }
             };
-            v._init = v.reposition = function () {
+            v._init = v.reposition = function() {
                 this.positionCells();
                 this.positionSliderAtSelected()
             };
-            v.getSize = function () {
+            v.getSize = function() {
                 this.size = i(this.element);
                 this.setCellAlign();
                 this.cursorPosition = this.size.innerWidth * this.cellAlign
             };
-            var g = {center: {left: .5, right: .5}, left: {left: 0, right: 1}, right: {right: 0, left: 1}};
-            v.setCellAlign = function () {
+            var g = {
+                center: {
+                    left: .5,
+                    right: .5
+                },
+                left: {
+                    left: 0,
+                    right: 1
+                },
+                right: {
+                    right: 0,
+                    left: 1
+                }
+            };
+            v.setCellAlign = function() {
                 var t = g[this.options.cellAlign];
                 this.cellAlign = t ? t[this.originSide] : this.options.cellAlign
             };
-            v.setGallerySize = function () {
+            v.setGallerySize = function() {
                 if (this.options.setGallerySize) {
-                    var t = this.options.adaptiveHeight && this.selectedSlide ? this.selectedSlide.height : this.maxCellHeight;
+                    var t = this.options.adaptiveHeight && this.selectedSlide ? this.selectedSlide.height : this
+                        .maxCellHeight;
                     this.viewport.style.height = t + "px"
                 }
             };
-            v._getWrapShiftCells = function () {
+            v._getWrapShiftCells = function() {
                 if (!this.options.wrapAround) {
                     return
                 }
@@ -1127,7 +1152,7 @@
                 t = this.size.innerWidth - this.cursorPosition;
                 this.afterShiftCells = this._getGapCells(t, 0, 1)
             };
-            v._getGapCells = function (t, e, i) {
+            v._getGapCells = function(t, e, i) {
                 var n = [];
                 while (t > 0) {
                     var s = this.cells[e];
@@ -1140,7 +1165,7 @@
                 }
                 return n
             };
-            v._containSlides = function () {
+            v._containSlides = function() {
                 if (!this.options.contain || this.options.wrapAround || !this.cells.length) {
                     return
                 }
@@ -1151,7 +1176,7 @@
                 var s = n < this.size.innerWidth;
                 var r = this.cursorPosition + this.cells[0].size[e];
                 var o = n - this.size.innerWidth * (1 - this.cellAlign);
-                this.slides.forEach(function (t) {
+                this.slides.forEach(function(t) {
                     if (s) {
                         t.target = n * this.cellAlign
                     } else {
@@ -1160,7 +1185,7 @@
                     }
                 }, this)
             };
-            v.dispatchEvent = function (t, e, i) {
+            v.dispatchEvent = function(t, e, i) {
                 var n = e ? [e].concat(i) : i;
                 this.emitEvent(t, n);
                 if (l && this.$element) {
@@ -1174,7 +1199,7 @@
                     this.$element.trigger(s, i)
                 }
             };
-            v.select = function (t, e, i) {
+            v.select = function(t, e, i) {
                 if (!this.isActive) {
                     return
                 }
@@ -1203,7 +1228,7 @@
                 }
                 this.dispatchEvent("cellSelect")
             };
-            v._wrapSelect = function (t) {
+            v._wrapSelect = function(t) {
                 var e = this.slides.length;
                 var i = this.options.wrapAround && e > 1;
                 if (!i) {
@@ -1224,13 +1249,13 @@
                     this.x += this.slideableWidth
                 }
             };
-            v.previous = function (t, e) {
+            v.previous = function(t, e) {
                 this.select(this.selectedIndex - 1, t, e)
             };
-            v.next = function (t, e) {
+            v.next = function(t, e) {
                 this.select(this.selectedIndex + 1, t, e)
             };
-            v.updateSelectedSlide = function () {
+            v.updateSelectedSlide = function() {
                 var t = this.slides[this.selectedIndex];
                 if (!t) {
                     return
@@ -1243,12 +1268,12 @@
                 this.selectedCell = t.cells[0];
                 this.selectedElement = this.selectedElements[0]
             };
-            v.unselectSelectedSlide = function () {
+            v.unselectSelectedSlide = function() {
                 if (this.selectedSlide) {
                     this.selectedSlide.unselect()
                 }
             };
-            v.selectInitialIndex = function () {
+            v.selectInitialIndex = function() {
                 var t = this.options.initialIndex;
                 if (this.isInitActivated) {
                     this.select(this.selectedIndex, false, true);
@@ -1267,7 +1292,7 @@
                 }
                 this.select(i, false, true)
             };
-            v.selectCell = function (t, e, i) {
+            v.selectCell = function(t, e, i) {
                 var n = this.queryCell(t);
                 if (!n) {
                     return
@@ -1275,7 +1300,7 @@
                 var s = this.getCellSlideIndex(n);
                 this.select(s, e, i)
             };
-            v.getCellSlideIndex = function (t) {
+            v.getCellSlideIndex = function(t) {
                 for (var e = 0; e < this.slides.length; e++) {
                     var i = this.slides[e];
                     var n = i.cells.indexOf(t);
@@ -1284,7 +1309,7 @@
                     }
                 }
             };
-            v.getCell = function (t) {
+            v.getCell = function(t) {
                 for (var e = 0; e < this.cells.length; e++) {
                     var i = this.cells[e];
                     if (i.element == t) {
@@ -1292,10 +1317,10 @@
                     }
                 }
             };
-            v.getCells = function (t) {
+            v.getCells = function(t) {
                 t = a.makeArray(t);
                 var i = [];
-                t.forEach(function (t) {
+                t.forEach(function(t) {
                     var e = this.getCell(t);
                     if (e) {
                         i.push(e)
@@ -1303,12 +1328,12 @@
                 }, this);
                 return i
             };
-            v.getCellElements = function () {
-                return this.cells.map(function (t) {
+            v.getCellElements = function() {
+                return this.cells.map(function(t) {
                     return t.element
                 })
             };
-            v.getParentCell = function (t) {
+            v.getParentCell = function(t) {
                 var e = this.getCell(t);
                 if (e) {
                     return e
@@ -1316,7 +1341,7 @@
                 t = a.getParent(t, ".flickity-slider > *");
                 return this.getCell(t)
             };
-            v.getAdjacentCellElements = function (t, e) {
+            v.getAdjacentCellElements = function(t, e) {
                 if (!t) {
                     return this.selectedSlide.getCellElements()
                 }
@@ -1335,7 +1360,7 @@
                 }
                 return n
             };
-            v.queryCell = function (t) {
+            v.queryCell = function(t) {
                 if (typeof t == "number") {
                     return this.cells[t]
                 }
@@ -1347,21 +1372,21 @@
                 }
                 return this.getCell(t)
             };
-            v.uiChange = function () {
+            v.uiChange = function() {
                 this.emitEvent("uiChange")
             };
-            v.childUIPointerDown = function (t) {
+            v.childUIPointerDown = function(t) {
                 if (t.type != "touchstart") {
                     t.preventDefault()
                 }
                 this.focus()
             };
-            v.onresize = function () {
+            v.onresize = function() {
                 this.watchCSS();
                 this.resize()
             };
             a.debounceMethod(p, "onresize", 150);
-            v.resize = function () {
+            v.resize = function() {
                 if (!this.isActive || this.isAnimating || this.isDragging) {
                     return
                 }
@@ -1376,7 +1401,7 @@
                 var t = this.selectedElements && this.selectedElements[0];
                 this.selectCell(t, false, true)
             };
-            v.watchCSS = function () {
+            v.watchCSS = function() {
                 var t = this.options.watchCSS;
                 if (!t) {
                     return
@@ -1388,7 +1413,7 @@
                     this.deactivate()
                 }
             };
-            v.onkeydown = function (t) {
+            v.onkeydown = function(t) {
                 var e = document.activeElement && document.activeElement != this.element;
                 if (!this.options.accessibility || e) {
                     return
@@ -1399,31 +1424,34 @@
                 }
             };
             p.keyboardHandlers = {
-                37: function () {
+                37: function() {
                     var t = this.options.rightToLeft ? "next" : "previous";
                     this.uiChange();
                     this[t]()
-                }, 39: function () {
+                },
+                39: function() {
                     var t = this.options.rightToLeft ? "previous" : "next";
                     this.uiChange();
                     this[t]()
                 }
             };
-            v.focus = function () {
+            v.focus = function() {
                 var t = n.pageYOffset;
-                this.element.focus({preventScroll: true});
+                this.element.focus({
+                    preventScroll: true
+                });
                 if (n.pageYOffset != t) {
                     n.scrollTo(n.pageXOffset, t)
                 }
             };
-            v.deactivate = function () {
+            v.deactivate = function() {
                 if (!this.isActive) {
                     return
                 }
                 this.element.classList.remove("flickity-enabled");
                 this.element.classList.remove("flickity-rtl");
                 this.unselectSelectedSlide();
-                this.cells.forEach(function (t) {
+                this.cells.forEach(function(t) {
                     t.destroy()
                 });
                 this.element.removeChild(this.viewport);
@@ -1435,7 +1463,7 @@
                 this.isActive = false;
                 this.emitEvent("deactivate")
             };
-            v.destroy = function () {
+            v.destroy = function() {
                 this.deactivate();
                 n.removeEventListener("resize", this);
                 this.allOff();
@@ -1447,7 +1475,7 @@
                 delete f[this.guid]
             };
             a.extend(v, r);
-            p.data = function (t) {
+            p.data = function(t) {
                 t = a.getQueryElement(t);
                 var e = t && t.flickityGUID;
                 return e && f[e]
@@ -1456,7 +1484,7 @@
             if (l && l.bridget) {
                 l.bridget("flickity", p)
             }
-            p.setJQuery = function (t) {
+            p.setJQuery = function(t) {
                 l = t
             };
             p.Cell = s;
@@ -1464,9 +1492,9 @@
             return p
         });
 
-        (function (e, i) {
+        (function(e, i) {
             if (typeof define == "function" && define.amd) {
-                define("unipointer/unipointer", ["ev-emitter/ev-emitter"], function (t) {
+                define("unipointer/unipointer", ["ev-emitter/ev-emitter"], function(t) {
                     return i(e, t)
                 })
             } else if (typeof module == "object" && module.exports) {
@@ -1475,20 +1503,18 @@
                 e.Unipointer = i(e, e.EvEmitter)
             }
         })(window, function t(s, e) {
-            function i() {
-            }
+            function i() {}
 
-            function n() {
-            }
+            function n() {}
 
             var r = n.prototype = Object.create(e.prototype);
-            r.bindStartEvent = function (t) {
+            r.bindStartEvent = function(t) {
                 this._bindStartEvent(t, true)
             };
-            r.unbindStartEvent = function (t) {
+            r.unbindStartEvent = function(t) {
                 this._bindStartEvent(t, false)
             };
-            r._bindStartEvent = function (t, e) {
+            r._bindStartEvent = function(t, e) {
                 e = e === undefined ? true : e;
                 var i = e ? "addEventListener" : "removeEventListener";
                 var n = "mousedown";
@@ -1499,13 +1525,13 @@
                 }
                 t[i](n, this)
             };
-            r.handleEvent = function (t) {
+            r.handleEvent = function(t) {
                 var e = "on" + t.type;
                 if (this[e]) {
                     this[e](t)
                 }
             };
-            r.getTouch = function (t) {
+            r.getTouch = function(t) {
                 for (var e = 0; e < t.length; e++) {
                     var i = t[e];
                     if (i.identifier == this.pointerIdentifier) {
@@ -1513,20 +1539,20 @@
                     }
                 }
             };
-            r.onmousedown = function (t) {
+            r.onmousedown = function(t) {
                 var e = t.button;
                 if (e && (e !== 0 && e !== 1)) {
                     return
                 }
                 this._pointerDown(t, t)
             };
-            r.ontouchstart = function (t) {
+            r.ontouchstart = function(t) {
                 this._pointerDown(t, t.changedTouches[0])
             };
-            r.onpointerdown = function (t) {
+            r.onpointerdown = function(t) {
                 this._pointerDown(t, t)
             };
-            r._pointerDown = function (t, e) {
+            r._pointerDown = function(t, e) {
                 if (t.button || this.isPointerDown) {
                     return
                 }
@@ -1534,7 +1560,7 @@
                 this.pointerIdentifier = e.pointerId !== undefined ? e.pointerId : e.identifier;
                 this.pointerDown(t, e)
             };
-            r.pointerDown = function (t, e) {
+            r.pointerDown = function(t, e) {
                 this._bindPostStartEvents(t);
                 this.emitEvent("pointerDown", [t, e])
             };
@@ -1543,103 +1569,106 @@
                 touchstart: ["touchmove", "touchend", "touchcancel"],
                 pointerdown: ["pointermove", "pointerup", "pointercancel"]
             };
-            r._bindPostStartEvents = function (t) {
+            r._bindPostStartEvents = function(t) {
                 if (!t) {
                     return
                 }
                 var e = o[t.type];
-                e.forEach(function (t) {
+                e.forEach(function(t) {
                     s.addEventListener(t, this)
                 }, this);
                 this._boundPointerEvents = e
             };
-            r._unbindPostStartEvents = function () {
+            r._unbindPostStartEvents = function() {
                 if (!this._boundPointerEvents) {
                     return
                 }
-                this._boundPointerEvents.forEach(function (t) {
+                this._boundPointerEvents.forEach(function(t) {
                     s.removeEventListener(t, this)
                 }, this);
                 delete this._boundPointerEvents
             };
-            r.onmousemove = function (t) {
+            r.onmousemove = function(t) {
                 this._pointerMove(t, t)
             };
-            r.onpointermove = function (t) {
+            r.onpointermove = function(t) {
                 if (t.pointerId == this.pointerIdentifier) {
                     this._pointerMove(t, t)
                 }
             };
-            r.ontouchmove = function (t) {
+            r.ontouchmove = function(t) {
                 var e = this.getTouch(t.changedTouches);
                 if (e) {
                     this._pointerMove(t, e)
                 }
             };
-            r._pointerMove = function (t, e) {
+            r._pointerMove = function(t, e) {
                 this.pointerMove(t, e)
             };
-            r.pointerMove = function (t, e) {
+            r.pointerMove = function(t, e) {
                 this.emitEvent("pointerMove", [t, e])
             };
-            r.onmouseup = function (t) {
+            r.onmouseup = function(t) {
                 this._pointerUp(t, t)
             };
-            r.onpointerup = function (t) {
+            r.onpointerup = function(t) {
                 if (t.pointerId == this.pointerIdentifier) {
                     this._pointerUp(t, t)
                 }
             };
-            r.ontouchend = function (t) {
+            r.ontouchend = function(t) {
                 var e = this.getTouch(t.changedTouches);
                 if (e) {
                     this._pointerUp(t, e)
                 }
             };
-            r._pointerUp = function (t, e) {
+            r._pointerUp = function(t, e) {
                 this._pointerDone();
                 this.pointerUp(t, e)
             };
-            r.pointerUp = function (t, e) {
+            r.pointerUp = function(t, e) {
                 this.emitEvent("pointerUp", [t, e])
             };
-            r._pointerDone = function () {
+            r._pointerDone = function() {
                 this._pointerReset();
                 this._unbindPostStartEvents();
                 this.pointerDone()
             };
-            r._pointerReset = function () {
+            r._pointerReset = function() {
                 this.isPointerDown = false;
                 delete this.pointerIdentifier
             };
             r.pointerDone = i;
-            r.onpointercancel = function (t) {
+            r.onpointercancel = function(t) {
                 if (t.pointerId == this.pointerIdentifier) {
                     this._pointerCancel(t, t)
                 }
             };
-            r.ontouchcancel = function (t) {
+            r.ontouchcancel = function(t) {
                 var e = this.getTouch(t.changedTouches);
                 if (e) {
                     this._pointerCancel(t, e)
                 }
             };
-            r._pointerCancel = function (t, e) {
+            r._pointerCancel = function(t, e) {
                 this._pointerDone();
                 this.pointerCancel(t, e)
             };
-            r.pointerCancel = function (t, e) {
+            r.pointerCancel = function(t, e) {
                 this.emitEvent("pointerCancel", [t, e])
             };
-            n.getPointerPoint = function (t) {
-                return {x: t.pageX, y: t.pageY}
+            n.getPointerPoint = function(t) {
+                return {
+                    x: t.pageX,
+                    y: t.pageY
+                }
             };
             return n
         });
 
-        (function (e, i) {
+        (function(e, i) {
             if (typeof define == "function" && define.amd) {
-                define("unidragger/unidragger", ["unipointer/unipointer"], function (t) {
+                define("unidragger/unidragger", ["unipointer/unipointer"], function(t) {
                     return i(e, t)
                 })
             } else if (typeof module == "object" && module.exports) {
@@ -1648,17 +1677,16 @@
                 e.Unidragger = i(e, e.Unipointer)
             }
         })(window, function t(r, e) {
-            function i() {
-            }
+            function i() {}
 
             var n = i.prototype = Object.create(e.prototype);
-            n.bindHandles = function () {
+            n.bindHandles = function() {
                 this._bindHandles(true)
             };
-            n.unbindHandles = function () {
+            n.unbindHandles = function() {
                 this._bindHandles(false)
             };
-            n._bindHandles = function (t) {
+            n._bindHandles = function(t) {
                 t = t === undefined ? true : t;
                 var e = t ? "addEventListener" : "removeEventListener";
                 var i = t ? this._touchActionValue : "";
@@ -1672,20 +1700,35 @@
                 }
             };
             n._touchActionValue = "none";
-            n.pointerDown = function (t, e) {
+            n.pointerDown = function(t, e) {
                 var i = this.okayPointerDown(t);
                 if (!i) {
                     return
                 }
-                this.pointerDownPointer = {pageX: e.pageX, pageY: e.pageY};
+                this.pointerDownPointer = {
+                    pageX: e.pageX,
+                    pageY: e.pageY
+                };
                 t.preventDefault();
                 this.pointerDownBlur();
                 this._bindPostStartEvents(t);
                 this.emitEvent("pointerDown", [t, e])
             };
-            var s = {TEXTAREA: true, INPUT: true, SELECT: true, OPTION: true};
-            var o = {radio: true, checkbox: true, button: true, submit: true, image: true, file: true};
-            n.okayPointerDown = function (t) {
+            var s = {
+                TEXTAREA: true,
+                INPUT: true,
+                SELECT: true,
+                OPTION: true
+            };
+            var o = {
+                radio: true,
+                checkbox: true,
+                button: true,
+                submit: true,
+                image: true,
+                file: true
+            };
+            n.okayPointerDown = function(t) {
                 var e = s[t.target.nodeName];
                 var i = o[t.target.type];
                 var n = !e || i;
@@ -1694,93 +1737,97 @@
                 }
                 return n
             };
-            n.pointerDownBlur = function () {
+            n.pointerDownBlur = function() {
                 var t = document.activeElement;
                 var e = t && t.blur && t != document.body;
                 if (e) {
                     t.blur()
                 }
             };
-            n.pointerMove = function (t, e) {
+            n.pointerMove = function(t, e) {
                 var i = this._dragPointerMove(t, e);
                 this.emitEvent("pointerMove", [t, e, i]);
                 this._dragMove(t, e, i)
             };
-            n._dragPointerMove = function (t, e) {
-                var i = {x: e.pageX - this.pointerDownPointer.pageX, y: e.pageY - this.pointerDownPointer.pageY};
+            n._dragPointerMove = function(t, e) {
+                var i = {
+                    x: e.pageX - this.pointerDownPointer.pageX,
+                    y: e.pageY - this.pointerDownPointer.pageY
+                };
                 if (!this.isDragging && this.hasDragStarted(i)) {
                     this._dragStart(t, e)
                 }
                 return i
             };
-            n.hasDragStarted = function (t) {
+            n.hasDragStarted = function(t) {
                 return Math.abs(t.x) > 3 || Math.abs(t.y) > 3
             };
-            n.pointerUp = function (t, e) {
+            n.pointerUp = function(t, e) {
                 this.emitEvent("pointerUp", [t, e]);
                 this._dragPointerUp(t, e)
             };
-            n._dragPointerUp = function (t, e) {
+            n._dragPointerUp = function(t, e) {
                 if (this.isDragging) {
                     this._dragEnd(t, e)
                 } else {
                     this._staticClick(t, e)
                 }
             };
-            n._dragStart = function (t, e) {
+            n._dragStart = function(t, e) {
                 this.isDragging = true;
                 this.isPreventingClicks = true;
                 this.dragStart(t, e)
             };
-            n.dragStart = function (t, e) {
+            n.dragStart = function(t, e) {
                 this.emitEvent("dragStart", [t, e])
             };
-            n._dragMove = function (t, e, i) {
+            n._dragMove = function(t, e, i) {
                 if (!this.isDragging) {
                     return
                 }
                 this.dragMove(t, e, i)
             };
-            n.dragMove = function (t, e, i) {
+            n.dragMove = function(t, e, i) {
                 t.preventDefault();
                 this.emitEvent("dragMove", [t, e, i])
             };
-            n._dragEnd = function (t, e) {
+            n._dragEnd = function(t, e) {
                 this.isDragging = false;
-                setTimeout(function () {
+                setTimeout(function() {
                     delete this.isPreventingClicks
                 }.bind(this));
                 this.dragEnd(t, e)
             };
-            n.dragEnd = function (t, e) {
+            n.dragEnd = function(t, e) {
                 this.emitEvent("dragEnd", [t, e])
             };
-            n.onclick = function (t) {
+            n.onclick = function(t) {
                 if (this.isPreventingClicks) {
                     t.preventDefault()
                 }
             };
-            n._staticClick = function (t, e) {
+            n._staticClick = function(t, e) {
                 if (this.isIgnoringMouseUp && t.type == "mouseup") {
                     return
                 }
                 this.staticClick(t, e);
                 if (t.type != "mouseup") {
                     this.isIgnoringMouseUp = true;
-                    setTimeout(function () {
+                    setTimeout(function() {
                         delete this.isIgnoringMouseUp
                     }.bind(this), 400)
                 }
             };
-            n.staticClick = function (t, e) {
+            n.staticClick = function(t, e) {
                 this.emitEvent("staticClick", [t, e])
             };
             i.getPointerPoint = e.getPointerPoint;
             return i
         });
-        (function (n, s) {
+        (function(n, s) {
             if (typeof define == "function" && define.amd) {
-                define("flickity/js/drag", ["./flickity", "unidragger/unidragger", "fizzy-ui-utils/utils"], function (t, e, i) {
+                define("flickity/js/drag", ["./flickity", "unidragger/unidragger", "fizzy-ui-utils/utils"], function(t,
+                    e, i) {
                     return s(n, t, e, i)
                 })
             } else if (typeof module == "object" && module.exports) {
@@ -1789,27 +1836,30 @@
                 n.Flickity = s(n, n.Flickity, n.Unidragger, n.fizzyUIUtils)
             }
         })(window, function t(n, e, i, a) {
-            a.extend(e.defaults, {draggable: ">1", dragThreshold: 3});
+            a.extend(e.defaults, {
+                draggable: ">1",
+                dragThreshold: 3
+            });
             e.createMethods.push("_createDrag");
             var s = e.prototype;
             a.extend(s, i.prototype);
             s._touchActionValue = "pan-y";
-            s._createDrag = function () {
+            s._createDrag = function() {
                 this.on("activate", this.onActivateDrag);
                 this.on("uiChange", this._uiChangeDrag);
                 this.on("deactivate", this.onDeactivateDrag);
                 this.on("cellChange", this.updateDraggable)
             };
-            s.onActivateDrag = function () {
+            s.onActivateDrag = function() {
                 this.handles = [this.viewport];
                 this.bindHandles();
                 this.updateDraggable()
             };
-            s.onDeactivateDrag = function () {
+            s.onDeactivateDrag = function() {
                 this.unbindHandles();
                 this.element.classList.remove("is-draggable")
             };
-            s.updateDraggable = function () {
+            s.updateDraggable = function() {
                 if (this.options.draggable == ">1") {
                     this.isDraggable = this.slides.length > 1
                 } else {
@@ -1821,18 +1871,18 @@
                     this.element.classList.remove("is-draggable")
                 }
             };
-            s.bindDrag = function () {
+            s.bindDrag = function() {
                 this.options.draggable = true;
                 this.updateDraggable()
             };
-            s.unbindDrag = function () {
+            s.unbindDrag = function() {
                 this.options.draggable = false;
                 this.updateDraggable()
             };
-            s._uiChangeDrag = function () {
+            s._uiChangeDrag = function() {
                 delete this.isFreeScrolling
             };
-            s.pointerDown = function (t, e) {
+            s.pointerDown = function(t, e) {
                 if (!this.isDraggable) {
                     this._pointerDownDefault(t, e);
                     return
@@ -1852,19 +1902,26 @@
                 n.addEventListener("scroll", this);
                 this._pointerDownDefault(t, e)
             };
-            s._pointerDownDefault = function (t, e) {
-                this.pointerDownPointer = {pageX: e.pageX, pageY: e.pageY};
+            s._pointerDownDefault = function(t, e) {
+                this.pointerDownPointer = {
+                    pageX: e.pageX,
+                    pageY: e.pageY
+                };
                 this._bindPostStartEvents(t);
                 this.dispatchEvent("pointerDown", t, [e])
             };
-            var r = {INPUT: true, TEXTAREA: true, SELECT: true};
-            s.pointerDownFocus = function (t) {
+            var r = {
+                INPUT: true,
+                TEXTAREA: true,
+                SELECT: true
+            };
+            s.pointerDownFocus = function(t) {
                 var e = r[t.target.nodeName];
                 if (!e) {
                     this.focus()
                 }
             };
-            s._pointerDownPreventDefault = function (t) {
+            s._pointerDownPreventDefault = function(t) {
                 var e = t.type == "touchstart";
                 var i = t.pointerType == "touch";
                 var n = r[t.target.nodeName];
@@ -1872,20 +1929,20 @@
                     t.preventDefault()
                 }
             };
-            s.hasDragStarted = function (t) {
+            s.hasDragStarted = function(t) {
                 return Math.abs(t.x) > this.options.dragThreshold
             };
-            s.pointerUp = function (t, e) {
+            s.pointerUp = function(t, e) {
                 delete this.isTouchScrolling;
                 this.viewport.classList.remove("is-pointer-down");
                 this.dispatchEvent("pointerUp", t, [e]);
                 this._dragPointerUp(t, e)
             };
-            s.pointerDone = function () {
+            s.pointerDone = function() {
                 n.removeEventListener("scroll", this);
                 delete this.pointerDownScroll
             };
-            s.dragStart = function (t, e) {
+            s.dragStart = function(t, e) {
                 if (!this.isDraggable) {
                     return
                 }
@@ -1894,12 +1951,12 @@
                 n.removeEventListener("scroll", this);
                 this.dispatchEvent("dragStart", t, [e])
             };
-            s.pointerMove = function (t, e) {
+            s.pointerMove = function(t, e) {
                 var i = this._dragPointerMove(t, e);
                 this.dispatchEvent("pointerMove", t, [e, i]);
                 this._dragMove(t, e, i)
             };
-            s.dragMove = function (t, e, i) {
+            s.dragMove = function(t, e, i) {
                 if (!this.isDraggable) {
                     return
                 }
@@ -1920,7 +1977,7 @@
                 this.dragMoveTime = new Date;
                 this.dispatchEvent("dragMove", t, [e, i])
             };
-            s.dragEnd = function (t, e) {
+            s.dragEnd = function(t, e) {
                 if (!this.isDraggable) {
                     return
                 }
@@ -1940,7 +1997,7 @@
                 delete this.isDragSelect;
                 this.dispatchEvent("dragEnd", t, [e])
             };
-            s.dragEndRestingSelect = function () {
+            s.dragEndRestingSelect = function() {
                 var t = this.getRestingPosition();
                 var e = Math.abs(this.getSlideDistance(-t, this.selectedIndex));
                 var i = this._getClosestResting(t, e, 1);
@@ -1948,12 +2005,12 @@
                 var s = i.distance < n.distance ? i.index : n.index;
                 return s
             };
-            s._getClosestResting = function (t, e, i) {
+            s._getClosestResting = function(t, e, i) {
                 var n = this.selectedIndex;
                 var s = Infinity;
-                var r = this.options.contain && !this.options.wrapAround ? function (t, e) {
+                var r = this.options.contain && !this.options.wrapAround ? function(t, e) {
                     return t <= e
-                } : function (t, e) {
+                } : function(t, e) {
                     return t < e
                 };
                 while (r(e, s)) {
@@ -1965,9 +2022,12 @@
                     }
                     e = Math.abs(e)
                 }
-                return {distance: s, index: n - i}
+                return {
+                    distance: s,
+                    index: n - i
+                }
             };
-            s.getSlideDistance = function (t, e) {
+            s.getSlideDistance = function(t, e) {
                 var i = this.slides.length;
                 var n = this.options.wrapAround && i > 1;
                 var s = n ? a.modulo(e, i) : e;
@@ -1978,7 +2038,7 @@
                 var o = n ? this.slideableWidth * Math.floor(e / i) : 0;
                 return t - (r.target + o)
             };
-            s.dragEndBoostSelect = function () {
+            s.dragEndBoostSelect = function() {
                 if (this.previousDragX === undefined || !this.dragMoveTime || new Date - this.dragMoveTime > 100) {
                     return 0
                 }
@@ -1991,13 +2051,13 @@
                 }
                 return 0
             };
-            s.staticClick = function (t, e) {
+            s.staticClick = function(t, e) {
                 var i = this.getParentCell(t.target);
                 var n = i && i.element;
                 var s = i && this.cells.indexOf(i);
                 this.dispatchEvent("staticClick", t, [e, n, s])
             };
-            s.onscroll = function () {
+            s.onscroll = function() {
                 var t = o();
                 var e = this.pointerDownScroll.x - t.x;
                 var i = this.pointerDownScroll.y - t.y;
@@ -2007,16 +2067,20 @@
             };
 
             function o() {
-                return {x: n.pageXOffset, y: n.pageYOffset}
+                return {
+                    x: n.pageXOffset,
+                    y: n.pageYOffset
+                }
             }
 
             return e
         });
-        (function (n, s) {
+        (function(n, s) {
             if (typeof define == "function" && define.amd) {
-                define("flickity/js/prev-next-button", ["./flickity", "unipointer/unipointer", "fizzy-ui-utils/utils"], function (t, e, i) {
-                    return s(n, t, e, i)
-                })
+                define("flickity/js/prev-next-button", ["./flickity", "unipointer/unipointer", "fizzy-ui-utils/utils"],
+                    function(t, e, i) {
+                        return s(n, t, e, i)
+                    })
             } else if (typeof module == "object" && module.exports) {
                 module.exports = s(n, require("./flickity"), require("unipointer"), require("fizzy-ui-utils"))
             } else {
@@ -2033,7 +2097,7 @@
             }
 
             o.prototype = Object.create(n.prototype);
-            o.prototype._create = function () {
+            o.prototype._create = function() {
                 this.isEnabled = true;
                 this.isPrevious = this.direction == -1;
                 var t = this.parent.options.rightToLeft ? 1 : -1;
@@ -2049,17 +2113,17 @@
                 this.parent.on("select", this.update.bind(this));
                 this.on("pointerDown", this.parent.childUIPointerDown.bind(this.parent))
             };
-            o.prototype.activate = function () {
+            o.prototype.activate = function() {
                 this.bindStartEvent(this.element);
                 this.element.addEventListener("click", this);
                 this.parent.element.appendChild(this.element)
             };
-            o.prototype.deactivate = function () {
+            o.prototype.deactivate = function() {
                 this.parent.element.removeChild(this.element);
                 this.unbindStartEvent(this.element);
                 this.element.removeEventListener("click", this)
             };
-            o.prototype.createSVG = function () {
+            o.prototype.createSVG = function() {
                 var t = document.createElementNS(r, "svg");
                 t.setAttribute("class", "flickity-button-icon");
                 t.setAttribute("viewBox", "0 0 100 100");
@@ -2078,11 +2142,12 @@
                 if (typeof t == "string") {
                     return t
                 }
-                return "M " + t.x0 + ",50" + " L " + t.x1 + "," + (t.y1 + 50) + " L " + t.x2 + "," + (t.y2 + 50) + " L " + t.x3 + ",50 " + " L " + t.x2 + "," + (50 - t.y2) + " L " + t.x1 + "," + (50 - t.y1) + " Z"
+                return "M " + t.x0 + ",50" + " L " + t.x1 + "," + (t.y1 + 50) + " L " + t.x2 + "," + (t.y2 + 50) +
+                    " L " + t.x3 + ",50 " + " L " + t.x2 + "," + (50 - t.y2) + " L " + t.x1 + "," + (50 - t.y1) + " Z"
             }
 
             o.prototype.handleEvent = s.handleEvent;
-            o.prototype.onclick = function () {
+            o.prototype.onclick = function() {
                 if (!this.isEnabled) {
                     return
                 }
@@ -2090,21 +2155,21 @@
                 var t = this.isPrevious ? "previous" : "next";
                 this.parent[t]()
             };
-            o.prototype.enable = function () {
+            o.prototype.enable = function() {
                 if (this.isEnabled) {
                     return
                 }
                 this.element.disabled = false;
                 this.isEnabled = true
             };
-            o.prototype.disable = function () {
+            o.prototype.disable = function() {
                 if (!this.isEnabled) {
                     return
                 }
                 this.element.disabled = true;
                 this.isEnabled = false
             };
-            o.prototype.update = function () {
+            o.prototype.update = function() {
                 var t = this.parent.slides;
                 if (this.parent.options.wrapAround && t.length > 1) {
                     this.enable();
@@ -2115,14 +2180,24 @@
                 var n = this.parent.selectedIndex == i ? "disable" : "enable";
                 this[n]()
             };
-            o.prototype.destroy = function () {
+            o.prototype.destroy = function() {
                 this.deactivate();
                 this.allOff()
             };
-            s.extend(i.defaults, {prevNextButtons: true, arrowShape: {x0: 10, x1: 60, y1: 50, x2: 70, y2: 40, x3: 30}});
+            s.extend(i.defaults, {
+                prevNextButtons: true,
+                arrowShape: {
+                    x0: 10,
+                    x1: 60,
+                    y1: 50,
+                    x2: 70,
+                    y2: 40,
+                    x3: 30
+                }
+            });
             i.createMethods.push("_createPrevNextButtons");
             var l = i.prototype;
-            l._createPrevNextButtons = function () {
+            l._createPrevNextButtons = function() {
                 if (!this.options.prevNextButtons) {
                     return
                 }
@@ -2130,12 +2205,12 @@
                 this.nextButton = new o(1, this);
                 this.on("activate", this.activatePrevNextButtons)
             };
-            l.activatePrevNextButtons = function () {
+            l.activatePrevNextButtons = function() {
                 this.prevButton.activate();
                 this.nextButton.activate();
                 this.on("deactivate", this.deactivatePrevNextButtons)
             };
-            l.deactivatePrevNextButtons = function () {
+            l.deactivatePrevNextButtons = function() {
                 this.prevButton.deactivate();
                 this.nextButton.deactivate();
                 this.off("deactivate", this.deactivatePrevNextButtons)
@@ -2143,11 +2218,12 @@
             i.PrevNextButton = o;
             return i
         });
-        (function (n, s) {
+        (function(n, s) {
             if (typeof define == "function" && define.amd) {
-                define("flickity/js/page-dots", ["./flickity", "unipointer/unipointer", "fizzy-ui-utils/utils"], function (t, e, i) {
-                    return s(n, t, e, i)
-                })
+                define("flickity/js/page-dots", ["./flickity", "unipointer/unipointer", "fizzy-ui-utils/utils"],
+                    function(t, e, i) {
+                        return s(n, t, e, i)
+                    })
             } else if (typeof module == "object" && module.exports) {
                 module.exports = s(n, require("./flickity"), require("unipointer"), require("fizzy-ui-utils"))
             } else {
@@ -2160,25 +2236,25 @@
             }
 
             r.prototype = Object.create(n.prototype);
-            r.prototype._create = function () {
+            r.prototype._create = function() {
                 this.holder = document.createElement("ol");
                 this.holder.className = "flickity-page-dots";
                 this.dots = [];
                 this.handleClick = this.onClick.bind(this);
                 this.on("pointerDown", this.parent.childUIPointerDown.bind(this.parent))
             };
-            r.prototype.activate = function () {
+            r.prototype.activate = function() {
                 this.setDots();
                 this.holder.addEventListener("click", this.handleClick);
                 this.bindStartEvent(this.holder);
                 this.parent.element.appendChild(this.holder)
             };
-            r.prototype.deactivate = function () {
+            r.prototype.deactivate = function() {
                 this.holder.removeEventListener("click", this.handleClick);
                 this.unbindStartEvent(this.holder);
                 this.parent.element.removeChild(this.holder)
             };
-            r.prototype.setDots = function () {
+            r.prototype.setDots = function() {
                 var t = this.parent.slides.length - this.dots.length;
                 if (t > 0) {
                     this.addDots(t)
@@ -2186,7 +2262,7 @@
                     this.removeDots(-t)
                 }
             };
-            r.prototype.addDots = function (t) {
+            r.prototype.addDots = function(t) {
                 var e = document.createDocumentFragment();
                 var i = [];
                 var n = this.dots.length;
@@ -2201,13 +2277,13 @@
                 this.holder.appendChild(e);
                 this.dots = this.dots.concat(i)
             };
-            r.prototype.removeDots = function (t) {
+            r.prototype.removeDots = function(t) {
                 var e = this.dots.splice(this.dots.length - t, t);
-                e.forEach(function (t) {
+                e.forEach(function(t) {
                     this.holder.removeChild(t)
                 }, this)
             };
-            r.prototype.updateSelected = function () {
+            r.prototype.updateSelected = function() {
                 if (this.selectedDot) {
                     this.selectedDot.className = "dot";
                     this.selectedDot.removeAttribute("aria-current")
@@ -2219,7 +2295,7 @@
                 this.selectedDot.className = "dot is-selected";
                 this.selectedDot.setAttribute("aria-current", "step")
             };
-            r.prototype.onTap = r.prototype.onClick = function (t) {
+            r.prototype.onTap = r.prototype.onClick = function(t) {
                 var e = t.target;
                 if (e.nodeName != "LI") {
                     return
@@ -2228,15 +2304,17 @@
                 var i = this.dots.indexOf(e);
                 this.parent.select(i)
             };
-            r.prototype.destroy = function () {
+            r.prototype.destroy = function() {
                 this.deactivate();
                 this.allOff()
             };
             i.PageDots = r;
-            s.extend(i.defaults, {pageDots: true});
+            s.extend(i.defaults, {
+                pageDots: true
+            });
             i.createMethods.push("_createPageDots");
             var o = i.prototype;
-            o._createPageDots = function () {
+            o._createPageDots = function() {
                 if (!this.options.pageDots) {
                     return
                 }
@@ -2247,24 +2325,25 @@
                 this.on("resize", this.updatePageDots);
                 this.on("deactivate", this.deactivatePageDots)
             };
-            o.activatePageDots = function () {
+            o.activatePageDots = function() {
                 this.pageDots.activate()
             };
-            o.updateSelectedPageDots = function () {
+            o.updateSelectedPageDots = function() {
                 this.pageDots.updateSelected()
             };
-            o.updatePageDots = function () {
+            o.updatePageDots = function() {
                 this.pageDots.setDots()
             };
-            o.deactivatePageDots = function () {
+            o.deactivatePageDots = function() {
                 this.pageDots.deactivate()
             };
             i.PageDots = r;
             return i
         });
-        (function (t, n) {
+        (function(t, n) {
             if (typeof define == "function" && define.amd) {
-                define("flickity/js/player", ["ev-emitter/ev-emitter", "fizzy-ui-utils/utils", "./flickity"], function (t, e, i) {
+                define("flickity/js/player", ["ev-emitter/ev-emitter", "fizzy-ui-utils/utils", "./flickity"], function(
+                    t, e, i) {
                     return n(t, e, i)
                 })
             } else if (typeof module == "object" && module.exports) {
@@ -2281,7 +2360,7 @@
             }
 
             s.prototype = Object.create(e.prototype);
-            s.prototype.play = function () {
+            s.prototype.play = function() {
                 if (this.state == "playing") {
                     return
                 }
@@ -2294,7 +2373,7 @@
                 document.addEventListener("visibilitychange", this.onVisibilityChange);
                 this.tick()
             };
-            s.prototype.tick = function () {
+            s.prototype.tick = function() {
                 if (this.state != "playing") {
                     return
                 }
@@ -2302,88 +2381,90 @@
                 t = typeof t == "number" ? t : 3e3;
                 var e = this;
                 this.clear();
-                this.timeout = setTimeout(function () {
+                this.timeout = setTimeout(function() {
                     e.parent.next(true);
                     e.tick()
                 }, t)
             };
-            s.prototype.stop = function () {
+            s.prototype.stop = function() {
                 this.state = "stopped";
                 this.clear();
                 document.removeEventListener("visibilitychange", this.onVisibilityChange)
             };
-            s.prototype.clear = function () {
+            s.prototype.clear = function() {
                 clearTimeout(this.timeout)
             };
-            s.prototype.pause = function () {
+            s.prototype.pause = function() {
                 if (this.state == "playing") {
                     this.state = "paused";
                     this.clear()
                 }
             };
-            s.prototype.unpause = function () {
+            s.prototype.unpause = function() {
                 if (this.state == "paused") {
                     this.play()
                 }
             };
-            s.prototype.visibilityChange = function () {
+            s.prototype.visibilityChange = function() {
                 var t = document.hidden;
                 this[t ? "pause" : "unpause"]()
             };
-            s.prototype.visibilityPlay = function () {
+            s.prototype.visibilityPlay = function() {
                 this.play();
                 document.removeEventListener("visibilitychange", this.onVisibilityPlay)
             };
-            i.extend(n.defaults, {pauseAutoPlayOnHover: true});
+            i.extend(n.defaults, {
+                pauseAutoPlayOnHover: true
+            });
             n.createMethods.push("_createPlayer");
             var r = n.prototype;
-            r._createPlayer = function () {
+            r._createPlayer = function() {
                 this.player = new s(this);
                 this.on("activate", this.activatePlayer);
                 this.on("uiChange", this.stopPlayer);
                 this.on("pointerDown", this.stopPlayer);
                 this.on("deactivate", this.deactivatePlayer)
             };
-            r.activatePlayer = function () {
+            r.activatePlayer = function() {
                 if (!this.options.autoPlay) {
                     return
                 }
                 this.player.play();
                 this.element.addEventListener("mouseenter", this)
             };
-            r.playPlayer = function () {
+            r.playPlayer = function() {
                 this.player.play()
             };
-            r.stopPlayer = function () {
+            r.stopPlayer = function() {
                 this.player.stop()
             };
-            r.pausePlayer = function () {
+            r.pausePlayer = function() {
                 this.player.pause()
             };
-            r.unpausePlayer = function () {
+            r.unpausePlayer = function() {
                 this.player.unpause()
             };
-            r.deactivatePlayer = function () {
+            r.deactivatePlayer = function() {
                 this.player.stop();
                 this.element.removeEventListener("mouseenter", this)
             };
-            r.onmouseenter = function () {
+            r.onmouseenter = function() {
                 if (!this.options.pauseAutoPlayOnHover) {
                     return
                 }
                 this.player.pause();
                 this.element.addEventListener("mouseleave", this)
             };
-            r.onmouseleave = function () {
+            r.onmouseleave = function() {
                 this.player.unpause();
                 this.element.removeEventListener("mouseleave", this)
             };
             n.Player = s;
             return n
         });
-        (function (i, n) {
+        (function(i, n) {
             if (typeof define == "function" && define.amd) {
-                define("flickity/js/add-remove-cell", ["./flickity", "fizzy-ui-utils/utils"], function (t, e) {
+                define("flickity/js/add-remove-cell", ["./flickity", "fizzy-ui-utils/utils"], function(t, e) {
                     return n(i, t, e)
                 })
             } else if (typeof module == "object" && module.exports) {
@@ -2394,14 +2475,14 @@
         })(window, function t(e, i, n) {
             function l(t) {
                 var e = document.createDocumentFragment();
-                t.forEach(function (t) {
+                t.forEach(function(t) {
                     e.appendChild(t.element)
                 });
                 return e
             }
 
             var s = i.prototype;
-            s.insert = function (t, e) {
+            s.insert = function(t, e) {
                 var i = this._makeCells(t);
                 if (!i || !i.length) {
                     return
@@ -2427,19 +2508,19 @@
                 this._sizeCells(i);
                 this.cellChange(e, true)
             };
-            s.append = function (t) {
+            s.append = function(t) {
                 this.insert(t, this.cells.length)
             };
-            s.prepend = function (t) {
+            s.prepend = function(t) {
                 this.insert(t, 0)
             };
-            s.remove = function (t) {
+            s.remove = function(t) {
                 var e = this.getCells(t);
                 if (!e || !e.length) {
                     return
                 }
                 var i = this.cells.length - 1;
-                e.forEach(function (t) {
+                e.forEach(function(t) {
                     t.remove();
                     var e = this.cells.indexOf(t);
                     i = Math.min(e, i);
@@ -2447,7 +2528,7 @@
                 }, this);
                 this.cellChange(i, true)
             };
-            s.cellSizeChange = function (t) {
+            s.cellSizeChange = function(t) {
                 var e = this.getCell(t);
                 if (!e) {
                     return
@@ -2456,7 +2537,7 @@
                 var i = this.cells.indexOf(e);
                 this.cellChange(i)
             };
-            s.cellChange = function (t, e) {
+            s.cellChange = function(t, e) {
                 var i = this.selectedElement;
                 this._positionCells(t);
                 this._getWrapShiftCells();
@@ -2474,9 +2555,9 @@
             };
             return i
         });
-        (function (i, n) {
+        (function(i, n) {
             if (typeof define == "function" && define.amd) {
-                define("flickity/js/lazyload", ["./flickity", "fizzy-ui-utils/utils"], function (t, e) {
+                define("flickity/js/lazyload", ["./flickity", "fizzy-ui-utils/utils"], function(t, e) {
                     return n(i, t, e)
                 })
             } else if (typeof module == "object" && module.exports) {
@@ -2488,10 +2569,10 @@
             "use strict";
             i.createMethods.push("_createLazyload");
             var n = i.prototype;
-            n._createLazyload = function () {
+            n._createLazyload = function() {
                 this.on("select", this.lazyLoad)
             };
-            n.lazyLoad = function () {
+            n.lazyLoad = function() {
                 var t = this.options.lazyLoad;
                 if (!t) {
                     return
@@ -2499,11 +2580,11 @@
                 var e = typeof t == "number" ? t : 0;
                 var i = this.getAdjacentCellElements(e);
                 var n = [];
-                i.forEach(function (t) {
+                i.forEach(function(t) {
                     var e = s(t);
                     n = n.concat(e)
                 });
-                n.forEach(function (t) {
+                n.forEach(function(t) {
                     new r(t, this)
                 }, this)
             };
@@ -2517,7 +2598,8 @@
                         return [t]
                     }
                 }
-                var s = "images[data-flickity-lazyload], " + "images[data-flickity-lazyload-src], images[data-flickity-lazyload-srcset]";
+                var s = "images[data-flickity-lazyload], " +
+                    "images[data-flickity-lazyload-src], images[data-flickity-lazyload-srcset]";
                 var r = t.querySelectorAll(s);
                 return o.makeArray(r)
             }
@@ -2529,10 +2611,11 @@
             }
 
             r.prototype.handleEvent = o.handleEvent;
-            r.prototype.load = function () {
+            r.prototype.load = function() {
                 this.img.addEventListener("load", this);
                 this.img.addEventListener("error", this);
-                var t = this.img.getAttribute("data-flickity-lazyload") || this.img.getAttribute("data-flickity-lazyload-src");
+                var t = this.img.getAttribute("data-flickity-lazyload") || this.img.getAttribute(
+                    "data-flickity-lazyload-src");
                 var e = this.img.getAttribute("data-flickity-lazyload-srcset");
                 this.img.src = t;
                 if (e) {
@@ -2542,13 +2625,13 @@
                 this.img.removeAttribute("data-flickity-lazyload-src");
                 this.img.removeAttribute("data-flickity-lazyload-srcset")
             };
-            r.prototype.onload = function (t) {
+            r.prototype.onload = function(t) {
                 this.complete(t, "flickity-lazyloaded")
             };
-            r.prototype.onerror = function (t) {
+            r.prototype.onerror = function(t) {
                 this.complete(t, "flickity-lazyerror")
             };
-            r.prototype.complete = function (t, e) {
+            r.prototype.complete = function(t, e) {
                 this.img.removeEventListener("load", this);
                 this.img.removeEventListener("error", this);
                 var i = this.flickity.getParentCell(this.img);
@@ -2561,7 +2644,7 @@
             return i
         });
 
-        (function (t, e) {
+        (function(t, e) {
             if (typeof define == "function" && define.amd) {
                 define("flickity-as-nav-for/as-nav-for", ["flickity/js/index", "fizzy-ui-utils/utils"], e)
             } else if (typeof module == "object" && module.exports) {
@@ -2572,7 +2655,7 @@
         })(window, function t(n, s) {
             n.createMethods.push("_createAsNavFor");
             var e = n.prototype;
-            e._createAsNavFor = function () {
+            e._createAsNavFor = function() {
                 this.on("activate", this.activateAsNavFor);
                 this.on("deactivate", this.deactivateAsNavFor);
                 this.on("destroy", this.destroyAsNavFor);
@@ -2585,7 +2668,7 @@
                     i.setNavCompanion(e)
                 })
             };
-            e.setNavCompanion = function (t) {
+            e.setNavCompanion = function(t) {
                 t = s.getQueryElement(t);
                 var e = n.data(t);
                 if (!e || e == this) {
@@ -2593,14 +2676,14 @@
                 }
                 this.navCompanion = e;
                 var i = this;
-                this.onNavCompanionSelect = function () {
+                this.onNavCompanionSelect = function() {
                     i.navCompanionSelect()
                 };
                 e.on("select", this.onNavCompanionSelect);
                 this.on("staticClick", this.onNavStaticClick);
                 this.navCompanionSelect(true)
             };
-            e.navCompanionSelect = function (t) {
+            e.navCompanionSelect = function(t) {
                 var e = this.navCompanion && this.navCompanion.selectedCells;
                 if (!e) {
                     return
@@ -2615,7 +2698,7 @@
                     return
                 }
                 var o = this.cells.slice(n, s + 1);
-                this.navSelectedElements = o.map(function (t) {
+                this.navSelectedElements = o.map(function(t) {
                     return t.element
                 });
                 this.changeNavSelectedClass("add")
@@ -2625,30 +2708,30 @@
                 return (e - t) * i + t
             }
 
-            e.changeNavSelectedClass = function (e) {
-                this.navSelectedElements.forEach(function (t) {
+            e.changeNavSelectedClass = function(e) {
+                this.navSelectedElements.forEach(function(t) {
                     t.classList[e]("is-nav-selected")
                 })
             };
-            e.activateAsNavFor = function () {
+            e.activateAsNavFor = function() {
                 this.navCompanionSelect(true)
             };
-            e.removeNavSelectedElements = function () {
+            e.removeNavSelectedElements = function() {
                 if (!this.navSelectedElements) {
                     return
                 }
                 this.changeNavSelectedClass("remove");
                 delete this.navSelectedElements
             };
-            e.onNavStaticClick = function (t, e, i, n) {
+            e.onNavStaticClick = function(t, e, i, n) {
                 if (typeof n == "number") {
                     this.navCompanion.selectCell(n)
                 }
             };
-            e.deactivateAsNavFor = function () {
+            e.deactivateAsNavFor = function() {
                 this.removeNavSelectedElements()
             };
-            e.destroyAsNavFor = function () {
+            e.destroyAsNavFor = function() {
                 if (!this.navCompanion) {
                     return
                 }
@@ -2659,10 +2742,10 @@
             return n
         });
 
-        (function (e, i) {
+        (function(e, i) {
             "use strict";
             if (typeof define == "function" && define.amd) {
-                define("imagesloaded/imagesloaded", ["ev-emitter/ev-emitter"], function (t) {
+                define("imagesloaded/imagesloaded", ["ev-emitter/ev-emitter"], function(t) {
                     return i(e, t)
                 })
             } else if (typeof module == "object" && module.exports) {
@@ -2725,11 +2808,11 @@
 
             l.prototype = Object.create(i.prototype);
             l.prototype.options = {};
-            l.prototype.getImages = function () {
+            l.prototype.getImages = function() {
                 this.images = [];
                 this.elements.forEach(this.addElementImages, this)
             };
-            l.prototype.addElementImages = function (t) {
+            l.prototype.addElementImages = function(t) {
                 if (t.nodeName == "IMG") {
                     this.addImage(t)
                 }
@@ -2753,8 +2836,12 @@
                     }
                 }
             };
-            var h = {1: true, 9: true, 11: true};
-            l.prototype.addElementBackgroundImages = function (t) {
+            var h = {
+                1: true,
+                9: true,
+                11: true
+            };
+            l.prototype.addElementBackgroundImages = function(t) {
                 var e = getComputedStyle(t);
                 if (!e) {
                     return
@@ -2769,15 +2856,15 @@
                     n = i.exec(e.backgroundImage)
                 }
             };
-            l.prototype.addImage = function (t) {
+            l.prototype.addImage = function(t) {
                 var e = new c(t);
                 this.images.push(e)
             };
-            l.prototype.addBackground = function (t, e) {
+            l.prototype.addBackground = function(t, e) {
                 var i = new u(t, e);
                 this.images.push(i)
             };
-            l.prototype.check = function () {
+            l.prototype.check = function() {
                 var n = this;
                 this.progressedCount = 0;
                 this.hasAnyBroken = false;
@@ -2787,17 +2874,17 @@
                 }
 
                 function e(t, e, i) {
-                    setTimeout(function () {
+                    setTimeout(function() {
                         n.progress(t, e, i)
                     })
                 }
 
-                this.images.forEach(function (t) {
+                this.images.forEach(function(t) {
                     t.once("progress", e);
                     t.check()
                 })
             };
-            l.prototype.progress = function (t, e, i) {
+            l.prototype.progress = function(t, e, i) {
                 this.progressedCount++;
                 this.hasAnyBroken = this.hasAnyBroken || !t.isLoaded;
                 this.emitEvent("progress", [this, t, e]);
@@ -2811,7 +2898,7 @@
                     r.log("progress: " + i, t, e)
                 }
             };
-            l.prototype.complete = function () {
+            l.prototype.complete = function() {
                 var t = this.hasAnyBroken ? "fail" : "done";
                 this.isComplete = true;
                 this.emitEvent(t, [this]);
@@ -2827,7 +2914,7 @@
             }
 
             c.prototype = Object.create(i.prototype);
-            c.prototype.check = function () {
+            c.prototype.check = function() {
                 var t = this.getIsImageComplete();
                 if (t) {
                     this.confirm(this.img.naturalWidth !== 0, "naturalWidth");
@@ -2840,28 +2927,28 @@
                 this.img.addEventListener("error", this);
                 this.proxyImage.src = this.img.src
             };
-            c.prototype.getIsImageComplete = function () {
+            c.prototype.getIsImageComplete = function() {
                 return this.img.complete && this.img.naturalWidth
             };
-            c.prototype.confirm = function (t, e) {
+            c.prototype.confirm = function(t, e) {
                 this.isLoaded = t;
                 this.emitEvent("progress", [this, this.img, e])
             };
-            c.prototype.handleEvent = function (t) {
+            c.prototype.handleEvent = function(t) {
                 var e = "on" + t.type;
                 if (this[e]) {
                     this[e](t)
                 }
             };
-            c.prototype.onload = function () {
+            c.prototype.onload = function() {
                 this.confirm(true, "onload");
                 this.unbindEvents()
             };
-            c.prototype.onerror = function () {
+            c.prototype.onerror = function() {
                 this.confirm(false, "onerror");
                 this.unbindEvents()
             };
-            c.prototype.unbindEvents = function () {
+            c.prototype.unbindEvents = function() {
                 this.proxyImage.removeEventListener("load", this);
                 this.proxyImage.removeEventListener("error", this);
                 this.img.removeEventListener("load", this);
@@ -2875,7 +2962,7 @@
             }
 
             u.prototype = Object.create(c.prototype);
-            u.prototype.check = function () {
+            u.prototype.check = function() {
                 this.img.addEventListener("load", this);
                 this.img.addEventListener("error", this);
                 this.img.src = this.url;
@@ -2885,21 +2972,21 @@
                     this.unbindEvents()
                 }
             };
-            u.prototype.unbindEvents = function () {
+            u.prototype.unbindEvents = function() {
                 this.img.removeEventListener("load", this);
                 this.img.removeEventListener("error", this)
             };
-            u.prototype.confirm = function (t, e) {
+            u.prototype.confirm = function(t, e) {
                 this.isLoaded = t;
                 this.emitEvent("progress", [this, this.element, e])
             };
-            l.makeJQueryPlugin = function (t) {
+            l.makeJQueryPlugin = function(t) {
                 t = t || e.jQuery;
                 if (!t) {
                     return
                 }
                 s = t;
-                s.fn.imagesLoaded = function (t, e) {
+                s.fn.imagesLoaded = function(t, e) {
                     var i = new l(this, t, e);
                     return i.jqDeferred.promise(s(this))
                 }
@@ -2908,9 +2995,9 @@
             return l
         });
 
-        (function (i, n) {
+        (function(i, n) {
             if (typeof define == "function" && define.amd) {
-                define(["flickity/js/index", "imagesloaded/imagesloaded"], function (t, e) {
+                define(["flickity/js/index", "imagesloaded/imagesloaded"], function(t, e) {
                     return n(i, t, e)
                 })
             } else if (typeof module == "object" && module.exports) {
@@ -2922,10 +3009,10 @@
             "use strict";
             i.createMethods.push("_createImagesLoaded");
             var n = i.prototype;
-            n._createImagesLoaded = function () {
+            n._createImagesLoaded = function() {
                 this.on("activate", this.imagesLoaded)
             };
-            n.imagesLoaded = function () {
+            n.imagesLoaded = function() {
                 if (!this.options.imagesLoaded) {
                     return
                 }
@@ -2943,7 +3030,6 @@
             };
             return i
         });
-
     </script>
 
 @endsection

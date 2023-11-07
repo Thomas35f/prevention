@@ -1,4 +1,17 @@
-# Prevention
+# Exo Docker
+
+## Paramétrage des images et du container : 
+
+- docker build -t prevention .
+- docker compose up --build
+- docker exec prevention-app php artisan migrate
+- docker exec prevention-app php artisan create:all
+
+
+### Note : 
+Pour une raison que j'ignore pour l'instant, en faisant un npm run build, la compilation va marcher pour les fichiers css mais non pour les fichiers typescript. Je n'ai pas eu le temps de trouver l'origine du problème. J'ai dont dû les exclure du front pour que l'app fonctionne.
+
+<!-- # Prevention
 
 The project, codenamed ACP, consists of the development of a SaaS service for training driving professionals.
 
@@ -104,4 +117,4 @@ this will run all test objects
 Now Server running on http://127.0.0.1:8000
 
 
-
+ -->

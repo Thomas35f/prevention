@@ -1,7 +1,7 @@
 version: '3.5'
 
 services:
-    api:
+    prevention:
         build:
             context: ./
             dockerfile: Dockerfile
@@ -20,11 +20,12 @@ services:
 
     db:
         platform: linux/x86_64
-        image: postgres:latest
+        image: mariadb:latest
+        command: --default-authentication-plugin=mysql_native_password
         restart: always
         environment:
             - MYSQL_ROOT_PASSWORD=rootdocker ps
-            - MYSQL_DATABASE=dashcam
+            - MYSQL_DATABASE=prevention
             - MYSQL_USER=thomas
             - MYSQL_PASSWORD=My7Pass@Word_9_8A_zE
         ports:
@@ -34,8 +35,8 @@ services:
         networks:
             - med
         volumes:
-            - db_data:/var/lib/postgres
-    
+            - db_data:/var/lib/mysql
+
     adminer:
         image: adminer
         restart: always
